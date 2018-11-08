@@ -18,10 +18,7 @@
 	font-family:AcuminProCondensed_Bold ;
 	src:url(/assets/css/fonts/AcuminProCondensed-Bold.otf) format("opentype");
 }
-	@font-face{
-	font-family:AcuminProCondensed_Regular ;
-	src:url(https://use.typekit.net/btl8bdo.css) format("opentype");
-}
+
 
 body{
 	background-color: #0f0e0e;
@@ -169,7 +166,7 @@ nav {
 		}
 		span{
 		line-height: 40px;
-		font-family:AcuminProCondensed_Regular;
+		font-family:AcuminProCondensed_Bold;
 		font-size: 13px;
 		letter-spacing: 0.27px;
 		color:#656265;
