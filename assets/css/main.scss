@@ -30,8 +30,8 @@ body{
 .top_block{
 	width: 100%;
 	height: 735px;
-	background: url(/assets/img/bg.jpg) no-repeat ;
-	background-size: cover;
+	background: url(/assets/img/bg.jpg) top no-repeat ;
+	// background-size: cover;
 }
 header{
 	height: 80px;
@@ -116,11 +116,7 @@ nav {
 #menu :last-child{
 	padding-right: 0;
 }
-.end_block{
-	height: 721px;
-	background: url(/assets/img/footer-bg.jpg) no-repeat center center;
-	background-size: cover;
-}
+
 .tittle h1{
 	font-family: AcuminProCondensed_Bold ;
 	font-size: 70px;
@@ -327,4 +323,102 @@ h2{
 	position: absolute;
 	top: 16px;
 	left: -26px;
+}
+.dots{
+	padding-top: 23px;
+	padding-bottom: 90px;
+}
+.subscribe_news{
+	background-color: #121211;
+	height: 153px;
+	.subscribe_to_news{
+		font-family: AcuminProCondensed_Bold;
+		font-size: 47px;
+		text-transform: uppercase;
+		margin-left: -5px;
+		display: inline;
+		line-height: 153px;
+	}
+	.write_email {
+			height: 40px;
+			width: 194px;
+			border:1px solid #343230;
+			border-radius: 20px;
+			float: left;
+			margin-right: 17px;
+			margin-top: 53px;
+			a{
+				padding-left: 20px;
+				color:#343230;
+				font-family: AcuminProCondensed_Bold;
+				font-size: 13px;
+			line-height: 40px;
+
+			}
+	}
+	.subscribe_btn{
+			height: 40px;
+			width: 115px;
+			border:1px solid #343230;
+			border-radius: 20px;
+			text-align: center;
+			margin-top: 53px;
+			a{
+				font-family: AcuminProCondensed_Bold;
+				font-size: 13px;
+				line-height: 40px;
+			}
+	}
+}
+.element_2{
+	padding-top: 151px;
+	padding-bottom: 17px;
+	// height: 63px;
+		img{
+			// height: 22px;
+		}
+}
+.footer_list{
+	padding-top: 164px;
+	.triger{
+		padding-top: 0px;
+	}
+				ul{
+					list-style: none;
+					padding-inline-start: 0px;
+					li{
+						font-family: AcuminPro_Bold ;
+						font-size: 13px;
+						line-height: 41px;
+						text-transform: uppercase;
+
+						a{
+							font-family: AcuminPro_Bold ;
+							font-size: 13px;
+							line-height: 41px;
+							text-transform: uppercase;
+							color: #ccc6c6;
+						}
+						a:hover{
+							color: #3b3a3a;
+						}
+					}
+				}
+
+				.contact{
+					padding-top: 24px;
+				}
+}
+.last_block{
+	height: 119px;
+	border-top: 1px solid #3b3a3a;
+	img{
+		padding-top: 20px;
+	}
+}
+
+.end_block{
+	// height: 531px;
+	background: url(/assets/img/footer-bg.jpg) bottom no-repeat;
+	// background-size: cover;
 }

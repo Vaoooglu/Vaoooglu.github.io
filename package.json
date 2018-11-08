@@ -1,0 +1,26 @@
+{
+  "name": "testforjob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vaoooglu/Vaoooglu.github.io.git"
+  },
+  "author": "vaoooglu.dn@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vaoooglu/Vaoooglu.github.io/issues"
+  },
+  "homepage": "https://github.com/Vaoooglu/Vaoooglu.github.io#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-livereload": "^4.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
