@@ -86,6 +86,9 @@ a {
 
 .transparent {
   position: absolute; }
+  @media screen and (max-width: 460px) {
+    .transparent {
+      left: -20px; } }
 
 .container {
   background-color: #b70021;
@@ -98,6 +101,9 @@ a {
     top: 30px;
     right: 50px;
     z-index: 10; }
+    @media screen and (max-width: 460px) {
+      .container #MenuIcon {
+        right: 20px; } }
   .container #MenuIcon:hover {
     cursor: pointer; }
   .container #MenuText {
@@ -451,6 +457,9 @@ a {
       grid-template-rows: 1fr 1fr;
       grid-template-rows: -webkit-max-content;
       grid-template-rows: max-content; } }
+  @media screen and (max-width: 680px) {
+    .adobemining .block-product_picture {
+      grid-row-start: 1; } }
 
 .add_product {
   height: 600px;
@@ -461,7 +470,7 @@ a {
   @media screen and (max-width: 780px) {
     .add_product {
       height: 400px; } }
-  @media screen and (max-width: 460px) {
+  @media screen and (max-width: 680px) {
     .add_product {
       height: auto; } }
 
