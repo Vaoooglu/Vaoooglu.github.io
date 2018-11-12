@@ -271,7 +271,7 @@ a {
     width: auto;
     height: auto;
     z-index: -2;
-    background: url(/assets/img/imagetest023.jpg) no-repeat;
+    background: url(assets/img/imagetest023.jpg) no-repeat;
     background-size: cover;
     -webkit-transition: 1s opacity;
     transition: 1s opacity; }
@@ -331,7 +331,7 @@ a {
     .block_row .newsmedia .heading_h4 {
       color: #b70021;
       padding-right: 70px;
-      background-image: url(/assets/img/right-arrow.svg);
+      background-image: url(assets/img/right-arrow.svg);
       background-repeat: no-repeat;
       background-size: 40px;
       background-position: right 5px; }
