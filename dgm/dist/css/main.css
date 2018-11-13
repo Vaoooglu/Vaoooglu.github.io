@@ -280,7 +280,7 @@ a {
   padding-bottom: 356px;
   background-position: 50% 50%;
   /* margin-top: -60px; */
-  background: url(/assets/img/backdetal.jpeg) no-repeat;
+  background: url(assets/img/backdetal.jpeg) no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   z-index: -1;
