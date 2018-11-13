@@ -156,6 +156,9 @@ a {
     transition: all .5s ease-in-out; }
     .container #MainMenu .logo_svg {
       height: 100px; }
+      @media screen and (max-height: 410px) {
+        .container #MainMenu .logo_svg {
+          height: 60px; } }
     .container #MainMenu #logo {
       position: absolute;
       top: 20%;
@@ -165,6 +168,9 @@ a {
       @media screen and (max-height: 800px) {
         .container #MainMenu #logo {
           top: 3%; } }
+      @media screen and (max-height: 410px) {
+        .container #MainMenu #logo {
+          top: 2%; } }
 
 @-webkit-keyframes logo_rotate {
   0% {
@@ -239,6 +245,9 @@ a {
     #close {
       bottom: 10%;
       top: initial; } }
+  @media screen and (max-height: 410px) {
+    #close {
+      bottom: 1%; } }
 
 #close:hover {
   color: #fff;
@@ -258,6 +267,9 @@ a {
   @media screen and (max-height: 800px) {
     .transparent_nav:before {
       top: 28%; } }
+  @media screen and (max-height: 410px) {
+    .transparent_nav:before {
+      top: 21%; } }
 
 .transparent_nav:after {
   content: '';
@@ -273,6 +285,9 @@ a {
     .transparent_nav:after {
       top: initial;
       bottom: 28%; } }
+  @media screen and (max-height: 410px) {
+    .transparent_nav:after {
+      bottom: 21%; } }
 
 #header_video {
   padding-left: 12px;
@@ -280,7 +295,7 @@ a {
   padding-bottom: 356px;
   background-position: 50% 50%;
   /* margin-top: -60px; */
-  background: url(assets/img/backdetal.jpeg) no-repeat;
+  background: url(/assets/img/backdetal.jpeg) no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   z-index: -1;
@@ -305,7 +320,7 @@ a {
     width: auto;
     height: auto;
     z-index: -2;
-    background: url(assets/img/backdetal.jpeg) no-repeat;
+    background: url(/assets/img/backdetal.jpeg) no-repeat;
     background-size: cover;
     -webkit-transition: 1s opacity;
     transition: 1s opacity; }
