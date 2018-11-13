@@ -3,27 +3,27 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
 @font-face {
   font-family: 'Verdana';
-  src: local("Verdana"), url("/assets/fonts/Verdana.woff") format("woff"), url("/assets/fonts/Verdana.ttf") format("ttf"), url("/assets/fonts/Verdana.eot") format("eot"); }
+  src: local("Verdana"), url("/dgm/assets/fonts/Verdana.woff") format("woff"), url("/dgm/assets/fonts/Verdana.ttf") format("ttf"), url("/dgm/assets/fonts/Verdana.eot") format("eot"); }
 
 @font-face {
   font-family: 'Verdana_Bold';
-  src: url("/assets/fonts/Verdana-Bold.woff") format("woff"), url("/assets/fonts/Verdana-Bold.ttf") format("ttf"), url("/assets/fonts/Verdana-Bold.eot") format("eot"); }
+  src: url("/dgm/assets/fonts/Verdana-Bold.woff") format("woff"), url("/dgm/assets/fonts/Verdana-Bold.ttf") format("ttf"), url("/dgm/assets/fonts/Verdana-Bold.eot") format("eot"); }
 
 @font-face {
   font-family: 'Verdana_Italic';
-  src: url("/assets/fonts/Verdana-Italic.woff") format("woff"), url("/assets/fonts/Verdana-Italic.ttf") format("ttf"), url("/assets/fonts/Verdana-Italic.eot") format("eot"); }
+  src: url("/dgm/assets/fonts/Verdana-Italic.woff") format("woff"), url("/dgm/assets/fonts/Verdana-Italic.ttf") format("ttf"), url("/dgm/assets/fonts/Verdana-Italic.eot") format("eot"); }
 
 @font-face {
   font-family: 'ElektraTextPro';
-  src: url("/assets/fonts/EtelkaText.otf") format("opentype"); }
+  src: url("/dgm/assets/fonts/EtelkaText.otf") format("opentype"); }
 
 @font-face {
   font-family: 'ElektraTextPro_Bold';
-  src: url("/assets/fonts/EtelkaTextBold.otf") format("opentype"); }
+  src: url("/dgm/assets/fonts/EtelkaTextBold.otf") format("opentype"); }
 
 @font-face {
   font-family: 'ElektraTextPro_Italic';
-  src: url("/assets/fonts/EtelkaTextItalic.otf") format("opentype"); }
+  src: url("/dgm/assets/fonts/EtelkaTextItalic.otf") format("opentype"); }
 
 body {
   margin: 0;
@@ -295,7 +295,7 @@ a {
   padding-bottom: 356px;
   background-position: 50% 50%;
   /* margin-top: -60px; */
-  background: url(assets/img/backdetal.jpeg) no-repeat;
+  background: url(/dgm/assets/img/backdetal.jpeg) no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   z-index: -1;
@@ -320,7 +320,7 @@ a {
     width: auto;
     height: auto;
     z-index: -2;
-    background: url(assets/img/backdetal.jpeg) no-repeat;
+    background: url(/dgm/assets/img/backdetal.jpeg) no-repeat;
     background-size: cover;
     -webkit-transition: 1s opacity;
     transition: 1s opacity; }
@@ -383,7 +383,7 @@ a {
     .block_row .newsmedia .heading_h4 {
       color: #b70021;
       padding-right: 70px;
-      background-image: url(assets/img/right-arrow.svg);
+      background-image: url(/dgm/assets/img/right-arrow.svg);
       background-repeat: no-repeat;
       background-size: 40px;
       background-position: right 5px; }
