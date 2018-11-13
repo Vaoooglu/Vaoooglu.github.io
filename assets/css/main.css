@@ -337,6 +337,8 @@ h2 {
 .element_2 {
   padding-top: 151px;
   padding-bottom: 17px; }
+  .element_2 img {
+    height: 22px; }
 
 .footer_list {
   padding-top: 164px; }
