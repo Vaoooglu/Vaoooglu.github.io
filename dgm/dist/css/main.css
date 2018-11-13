@@ -295,7 +295,7 @@ a {
   padding-bottom: 356px;
   background-position: 50% 50%;
   /* margin-top: -60px; */
-  background: url(/assets/img/backdetal.jpeg) no-repeat;
+  background: url(assets/img/backdetal.jpeg) no-repeat;
   background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   z-index: -1;
@@ -320,7 +320,7 @@ a {
     width: auto;
     height: auto;
     z-index: -2;
-    background: url(/assets/img/backdetal.jpeg) no-repeat;
+    background: url(assets/img/backdetal.jpeg) no-repeat;
     background-size: cover;
     -webkit-transition: 1s opacity;
     transition: 1s opacity; }
@@ -383,7 +383,7 @@ a {
     .block_row .newsmedia .heading_h4 {
       color: #b70021;
       padding-right: 70px;
-      background-image: url(/assets/img/right-arrow.svg);
+      background-image: url(assets/img/right-arrow.svg);
       background-repeat: no-repeat;
       background-size: 40px;
       background-position: right 5px; }
