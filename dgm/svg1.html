@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	/* body{
+		background-color:black;
+	} */
+.svg1{
+border:1px solid white;
+padding:20px;
+background-color:black;
+height:100vh;
+
+}
+
+#svg1{
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+</style>
+<body>
+<div class="svg1">
+		<svg version="1.1" id="svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		width="400px" height="400px" viewBox="0 0 213 141" style="enable-background:new 0 0 213 141;" xml:space="preserve">
+ <style type="text/css">
+	 .st3{fill:none;stroke:#ffffff;stroke-width:1;stroke-miterlimit:10;}
+ </style>
+ <g id="figure">
+
+	<path class="st3" id="check7" fill="none" stroke="white" stroke-dasharray="586" stroke-dashoffset="0"   d="M1.8 120.9,106.8 3,211.8 120.9,125.8 120.9,125.8 100,106.8 120.9,87.8 100,87.8 120.9 Z">
+			<animate id="p2" attributeName="stroke-dashoffset" begin="1s" values="586; 0" dur="4s" repeatCount="indefinite" keyTimes="0; 1" fill="freeze" calcMode="spline" keySplines=".18 .73 .87 .24"></animate>
+ </path>
+
+ <path class="st3" id="check8" fill="none" stroke="white" stroke-dasharray="475" stroke-dashoffset="0"   d="M34.8 106,106.8 25.8,178.7 106,138.9 106,138.9 63.3,106.8 97.6, 74.8 63.3, 74.8 106 Z">
+		<animate id="p3" attributeName="stroke-dashoffset" begin="1s" values="475; 0" dur="4s" repeatCount="indefinite" keyTimes="0; 1" fill="freeze" calcMode="spline" keySplines=".18 .73 .87 .24">
+ </path>
+
+ <path class="st3" id="check6" fill="none" stroke="white" stroke-dasharray="162" stroke-dashoffset="0" d="M106.7 58, 124.6 76,124.8 47,121.6 43.8,91.8 43.8,89 46.9,89 76,91.8 78.8,106.7 78.8 Z">
+		<animate id="p4" attributeName="stroke-dashoffset" begin="1s" values="162; 0" dur="4s" repeatCount="indefinite" keyTimes="0;1" fill="freeze" calcMode="spline" keySplines=".18 .73 .87 .24">
+ </path>
+
+ </g>
+
+ </svg>
+</div>
+
+
+
+<script>
+	function TotalLength2(){
+var path=document.querySelector('#check2');
+var len=Math.round(path.getTotalLength());
+alert('Длина=    '+len);
+	};
+	function TotalLength1(){
+var path=document.querySelector('#check6');
+var len=Math.round(path.getTotalLength());
+alert('Длина=    '+len);
+	};
+
+</script>
+</body>
+</html>

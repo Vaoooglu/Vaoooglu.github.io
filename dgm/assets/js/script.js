@@ -57,13 +57,15 @@ $(document).ready(function() {
 		$('.scrol-btn').click(function(){
 			$('html,body').animate({scrollTop: 0}, 1000);
 		});
-});
-function supportsImports() {
-  return 'import' in document.createElement('link');
-}
 
-if (supportsImports()) {
-  console.log("Браузер поддерживает import HTML");
-} else {
-  console.log("НЕТ ПОДДЕРЖКИ import HTML");
-}
+
+});
+$(document).ready(function(){
+	$('a').each(function () {
+					var location = window.location.href;
+					var link = this.href;
+					if(location == link) {
+							$(this).addClass('active');
+					}
+			});
+	});

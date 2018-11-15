@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+	/* body{
+		background-color:black;
+	} */
+.svg2{
+border:1px solid black;
+padding:20px;
+background-color:black;
+height:100vh;
+}
+#svg2{
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+</style>
+<body>
+<div class="svg2">
+	<input type="button" value="Total" onclick="TotalLength()"/>
+	<svg version="1.1" id="svg2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	width="400px" height="400px" viewBox="0 0 213 119.6" style="enable-background:new 0 0 213 119.6;" xml:space="preserve">
+<polygon id="check1" fill="none" stroke="white" stroke-dasharray="1055" stroke-dashoffset="0" points="106.5,0 0,119.5 20,119.5 106.5,23 179.6,104.6 139,104.5 139,61.5 106.5,96.5 74,61.5 74,104.5 33.4,104.6
+	20,119.5 106.5,119.5 193,119.5 213,119.5 ">
+	<animate id="p1" attributeName="stroke-dashoffset" begin="1s" values="1055; 0" dur="4s" repeatCount="1" fill="freeze" calcMode="linear"></animate>
+</polygon>
+<polygon id="check2" fill="none" stroke="white" stroke-dasharray="162" stroke-dashoffset="0" points="91,41.5 122,41.5 124,43.5 124,74.5 106.5,56.5 106.5,76.5 91,76.5 89,74.5 89,43.5 ">
+		<animate id="p1" attributeName="stroke-dashoffset" begin="1s" values="162; 0" dur="2s" repeatCount="2" fill="freeze" calcMode="linear"></animate>
+
+</polygon>
+
+</svg>
+</div>
+<script>
+	function TotalLength(){
+var path=document.querySelector('#check2');
+var len=Math.round(path.getTotalLength());
+alert('Длина=    '+len);
+	};
+</script>
+</body>
+</html>
