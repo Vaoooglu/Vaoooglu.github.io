@@ -15,6 +15,14 @@
 }
 
 @font-face {
+  font-family: 'playregular';
+  src: url("fonts/play-regular.eot");
+  src: url("fonts/play-regulard41d.eot?#iefix") format("embedded-opentype"), url("fonts/play-regular.woff") format("woff"), url("fonts/play-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'exo_2.0semi_bold';
   src: url("fonts/Exo2.0-SemiBold-webfont.eot");
   src: url("fonts/Exo2.0-SemiBold-webfontd41d.eot?#iefix") format("embedded-opentype"), url("fonts/Exo2.0-SemiBold-webfont.woff2") format("woff2"), url("fonts/Exo2.0-SemiBold-webfont.woff") format("woff"), url("fonts/Exo2.0-SemiBold-webfont.ttf") format("truetype");
@@ -1225,6 +1233,7 @@ body {
   top: -3px;
   background: url("../img/logo_guardiya.png") no-repeat;
   background-size: contain;
+  opacity: 0.8;
 }
 
 .preloader p {

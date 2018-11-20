@@ -14,11 +14,11 @@ $(document).ready(function() {
 	var iPad = navigator.userAgent.search(/iPad/i);
 	if(Android != -1 || iPhone != -1 || iPad != -1) {
 
-			$('head').append('<link rel="stylesheet" type="text/css" href="../../dist/css/mobile.css" />'); //подключение файла mobile.css если мобильник
+			$('head').append('<link rel="stylesheet" type="text/css" href="../dist/css/mobile.css" />'); //подключение файла mobile.css если мобильник
 
 	} else {
 
-			$('head').append('<link rel="stylesheet" type="text/css" href="../../dist/css/fullpage.min.css" />'); //подключение файла jquery.fullPage.css если не мобильник
+			$('head').append('<link rel="stylesheet" type="text/css" href="../dist/js/jquery.fullPage/jquery.fullPage.css" />'); //подключение файла jquery.fullPage.css если не мобильник
 
 			$('#page').fullpage({
 					menu: '#topnav',
@@ -65,9 +65,9 @@ slider.owlCarousel({
 var otz_nom = 0;
 var otz = new Array();
 otz = [
-			"wp-content/themes/4u-group/img/montag/block-06_motz1.jpg",
-			"wp-content/themes/4u-group/img/montag/block-06_motz2.jpg",
-			"wp-content/themes/4u-group/img/montag/block-06_motz3.jpg"
+			"../dist/img/block-06_motz1.jpg",
+			"../dist/img/block-06_motz2.jpg",
+			"../dist/img/block-06_motz3.jpg"
 			];
 var otz_max = otz.length;
 
