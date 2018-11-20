@@ -1217,13 +1217,14 @@ body {
 }
 
 .preloader .one {
-  width: 160px;
-  height: 150px;
+  width: 70px;
+  height: 95px;
   position: absolute;
-  left: -48px;
+  left: -3px;
   z-index: 2;
-  top: -10px;
-  background: url("../img/prelogo3.png");
+  top: -3px;
+  background: url("../img/logo_guardiya.png") no-repeat;
+  background-size: contain;
 }
 
 .preloader p {
@@ -1232,10 +1233,10 @@ body {
   text-align: center;
   font-size: 10px;
   font-style: italic;
-  bottom: -8px;
-  color: #363636;
+  bottom: -51px;
+  color: #ffffff;
   text-transform: uppercase;
-  left: 0;
+  left: 3px;
   padding: 0;
   margin: 0;
   z-index: 3;
@@ -1244,14 +1245,14 @@ body {
 
 .preloader .double_bounce1,
 .preloader .double_bounce2 {
-  width: 140px;
-  height: 140px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.6;
   position: absolute;
-  top: -29px;
-  left: -38px;
+  top: -38px;
+  left: -48px;
   -webkit-animation: bounce 2s infinite ease-in-out;
   animation: bounce 2s infinite ease-in-out;
 }
@@ -1281,7 +1282,7 @@ body {
 
 @-webkit-keyframes bounce {
   0%, 100% {
-    -webkit-transform: scale(0.3);
+    -webkit-transform: scale(0.4);
   }
 
   50% {
@@ -1291,8 +1292,8 @@ body {
 
 @keyframes bounce {
   0%, 100% {
-    transform: scale(0.3);
-    -webkit-transform: scale(0.3);
+    transform: scale(0.4);
+    -webkit-transform: scale(0.4);
   }
 
   50% {
