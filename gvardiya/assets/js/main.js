@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 	} else {
 
-			$('head').append('<link rel="stylesheet" type="text/css" href="gvardiya/dist/js/jquery.fullPage/jquery.fullPage.css" />'); //подключение файла jquery.fullPage.css если не мобильник
+			$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />'); //подключение файла jquery.fullPage.css если не мобильник
 
 			$('#page').fullpage({
 					menu: '#topnav',
