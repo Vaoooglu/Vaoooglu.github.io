@@ -724,6 +724,7 @@ a {
   transition: all .3s;
   border: 3px solid #1A2930;
   padding: 4px;
+  padding-top: 7px;
 }
 
 @media screen and (max-height: 800px) {

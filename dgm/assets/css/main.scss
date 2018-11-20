@@ -362,6 +362,7 @@ padding: 0;
 	transition: all .3s;
 	border:3px solid $unprimary;
 	padding: 4px;
+	padding-top: 7px;
 	@media screen and (max-height: 800px){
 		bottom: 10%;
 		top:initial;
