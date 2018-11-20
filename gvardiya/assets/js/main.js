@@ -14,7 +14,7 @@ $(document).ready(function() {
 	var iPad = navigator.userAgent.search(/iPad/i);
 	if(Android != -1 || iPhone != -1 || iPad != -1) {
 
-			$('head').append('<link rel="stylesheet" type="text/css" href="gvardiya/dist/css/mobile.css" />'); //подключение файла mobile.css если мобильник
+			$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />'); //подключение файла mobile.css если мобильник
 
 	} else {
 
@@ -65,9 +65,9 @@ slider.owlCarousel({
 var otz_nom = 0;
 var otz = new Array();
 otz = [
-			"gvardiya/dist/img/block-06_motz1.jpg",
-			"gvardiya/dist/img/block-06_motz2.jpg",
-			"gvardiya/dist/img/block-06_motz3.jpg"
+			"dist/img/block-06_motz1.jpg",
+			"dist/img/block-06_motz2.jpg",
+			"dist/img/block-06_motz3.jpg"
 			];
 var otz_max = otz.length;
 
