@@ -1,4 +1,4 @@
-
+var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
 
 
@@ -8,36 +8,65 @@ $(document).ready(function() {
 			// $.fn.fullpage.moveTo(1);
 	});
 
- // Анимация
-	var Android = navigator.userAgent.search(/Android/i);
-	var iPhone = navigator.userAgent.search(/iPhone/i);
-	var iPad = navigator.userAgent.search(/iPad/i);
-	if(Android != -1 || iPhone != -1 || iPad != -1) {
 
-			$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />'); //подключение файла mobile.css если мобильник
 
-	} else {
 
-			$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />'); //подключение файла jquery.fullPage.css если не мобильник
 
-			$('#page').fullpage({
-					menu: '#topnav',
-					anchors: ['homepage', 'ekonomiya', 'services', 'garant', 'advantages', 'reviews', 'how-it-work', 'sales', 'contactPage'],
-					css3: true,
-					verticalCentered: false,
-					navigation: true,
-					slidesNavigation: false,
-					navigationPosition: 'right',
-					showActiveTooltip: true,
-					responsive: 980,
-					navigationTooltips: ['Главная', 'Экономия', 'Услуги', 'Гарантии', 'Преимущества', 'Отзывы', 'Как мы работаем', 'Акция', 'Контакты'],
-					onLeave: function(index , nextIndex , direction){
-							//var id_slide = $(this).attr('id');
-							change_slide (nextIndex);
+					if(isPhoneDevice){
+						$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />');
+						// $.fn.fullpage.destroy('all');	//mobile
 					}
-		 });
+							else{
+								$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />');	//desktop
+								$('#page').fullpage({
+									menu: '#topnav',
+									anchors: ['homepage', 'ekonomiya', 'services', 'garant', 'advantages', 'reviews', 'how-it-work', 'sales', 'contactPage'],
+									css3: true,
+									verticalCentered: false,
+									navigation: true,
+									slidesNavigation: false,
+									navigationPosition: 'right',
+									showActiveTooltip: true,
+									responsive: 980,
+									navigationTooltips: ['Главная', 'Экономия', 'Услуги', 'Гарантии', 'Преимущества', 'Отзывы', 'Как мы работаем', 'Акция', 'Контакты'],
+									onLeave: function(index , nextIndex , direction){
+												//var id_slide = $(this).attr('id');
+												change_slide (nextIndex);
+									}
+						 		});
+							}
 
-	}
+
+//  // Анимация
+// 	var Android = navigator.userAgent.search(/Android/i);
+// 	var iPhone = navigator.userAgent.search(/iPhone/i);
+// 	var iPad = navigator.userAgent.search(/iPad/i);
+// 	if(Android != -1 || iPhone != -1 || iPad != -1) {
+
+// 			$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />'); //подключение файла mobile.css если мобильник
+
+// 	} else {
+
+// 			$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />'); //подключение файла jquery.fullPage.css если не мобильник
+
+// 			$('#page').fullpage({
+// 					menu: '#topnav',
+// 					anchors: ['homepage', 'ekonomiya', 'services', 'garant', 'advantages', 'reviews', 'how-it-work', 'sales', 'contactPage'],
+// 					css3: true,
+// 					verticalCentered: false,
+// 					navigation: true,
+// 					slidesNavigation: false,
+// 					navigationPosition: 'right',
+// 					showActiveTooltip: true,
+// 					responsive: 980,
+// 					navigationTooltips: ['Главная', 'Экономия', 'Услуги', 'Гарантии', 'Преимущества', 'Отзывы', 'Как мы работаем', 'Акция', 'Контакты'],
+// 					onLeave: function(index , nextIndex , direction){
+// 							//var id_slide = $(this).attr('id');
+// 							change_slide (nextIndex);
+// 					}
+// 		 });
+
+// 	}
 
 });
 
