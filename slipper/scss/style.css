@@ -2026,6 +2026,7 @@ section {
 					position: absolute;
 					top: 195px;
 					left: 18px;
+					width: initial;
 				 } }
       .bluephone {
         margin-top: 30px;
