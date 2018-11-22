@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slipper X One</title>
+  <link rel="shortcut icon" type="image/png" href="img/Vector.png"/>
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="scss/style.css">
+</head>
+<body>
+  <!-- <div class="page_preloader preloader" data-widget="preloader" style="">
+    <div class="preloader_wrapper">
+      <div class="preloader_logo">
+        <img src="img/logo.svg" alt="" class="preloader-logo">
+      </div>
+      <div class="preloader_progress">
+        <div class="preloader_percent">
+          <span class="preloader_percent_value">0</span>%
+        </div>
+        <div class="preloader_bar">
+          <div class="preloader_bar_value">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- FIXED RIGHT NAVIGATION -->
+  <div class="right-fixed-navigation list-group" id="right-nav" data-widget="scrollspy">
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#first-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#second-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#third-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#fourth-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#fifth-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#sixth-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#seventh-section"><span></span></a>
+    <a class="list-group-item list-group-item-action scrollspy_item" href="#eighth-section"><span></span></a>
+  </div>
+  <!-- MODAL -->
+  <div class="modal buy-modal">
+    <img src="img/close.png" alt="" class="close-modal">
+    <div class="container column">
+      <div class="mini-section">
+        <div class="big-column">
+          <h6 class="title">Slipper <span class="red">X ONE</span></h6>
+          <p>Выберите цвет:</p>
+          <ul class="tabs tabss">
+          <li class="active">Red</li>
+          <li>Blue</li>
+          <li>Space</li>
+        </ul>
+        <div class="button-group">
+            <button>+</button>
+            <div class="square">2</div>
+            <button>-</button>
+         </div>
+          <div class="row-images">
+            <img src="img/red.png" alt="">
+            <img src="img/blue.png" alt="">
+            <img src="img/space.png" alt="">
+          </div>
+        </div>
+        <div class="small-column">
+          <span class="price-x">67.000 руб</span>
+          <p class="finish-price">итого: 67 000 руб х 2 шт</p>
+          <a href="" class="btn">оформить</a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <div class="column">
+          <div class="form-group">
+            <p><img src="img/eighth-section/worldwide.svg" style="margin-right: 15px" alt="">Контактные данные</p>
+            <div class="wrapper">
+              <div class="input-group">
+                <label for="text">Имя</label>
+                <input type="text" placeholder="Введите ваше Имя">
+              </div>
+              <div class="input-group">
+                  <label for="text">Телефон</label>
+                  <input type="text" placeholder="+ 7 (...)">
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <p>Доставка</p>
+            <div class="wrapper">
+              <div class="input-group">
+                <button class="active deliver-btn get-btn">Доставка</button>
+                <p>Доставка курьером в удобное для Вас время</p>
+              </div>
+              <div class="input-group">
+                <button class="go-btn get-btn">Самовывоз</button>
+                <p>Вы можете забрать свой заказ самостоятельно</p>
+              </div>
+            </div>
+            <div class="deliver">
+              <div class="wrapper">
+                <div class="input-group">
+                  <label for="text">Город</label>
+                  <input type="text" placeholder="Москва">
+                </div>
+              </div>
+              <div class="wrapper area">
+                <div class="input-group area">
+                  <label for="text">Адрес</label>
+                  <textarea placeholder="Область, город, улица, дом (строение), квартира"></textarea>
+                  <p>Доставка осуществляется Транспортной компанией в течении 5 рабочих дней. <br>Доставка осуществляется без дополнительной оплаты.</p>
+                </div>
+              </div>
+              <div class="form-group">
+                <p><img src="img/eighth-section/worldwide.svg" style="margin-right: 15px" alt="">Оплата</p>
+                <div class="wrapper">
+                  <div class="input-group">
+                    <button class="active">Яндекс Касса</button>
+                    <p>Платите  безопасно онлайн <br>не выходя из дома</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="going" style="display: none">
+              <div class="wrapper">
+                <p>Забрать свой заказ самостоятельно вы можете по адресу</p>
+                <p class="place-p"><img src="img/placeholder.svg">1-я, Останкинская д. 55, ТЦ "ВДНХ" павильон 49</p>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.213719367639!2d37.63244404693716!3d55.82424965970905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5367729ad8759%3A0x1e51e7b00dbcb36f!2z0KLQvtGA0LPQvtCy0YvQuSDRhtC10L3RgtGAINCS0JTQndCl!5e0!3m2!1sru!2sru!4v1542371102775" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                <p class="place-a">Остались вопросы? Вы можете задать их нам, любым удобным для Вас способом</p>
+                <div>
+                  <a href="tel:+74952900000" class="bluephone">+7 (495) 290 00 00</a><a href="mailto:sales@ecoboom.ru" class="bluemail">sales@ecoboom.ru</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="invite-block">
+            <button class="btn-invite">заказать обратный звонок</button>
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="phone-modall">
+    <img src="img/close.png" class="close-modal" alt="close">
+    <h5>Оставьте заявку<br> и наш менеджер свяжется с Вами</h5>
+    <div class="inputs">
+      <input type="text" placeholder="Ваше имя">
+      <input type="text" placeholder="Телефон">
+      <button class="btn thanks-btn">отправить</button>
+    </div>
+
+  </div>
+  <div class="modal-thanks">
+    <img src="img/close.png" class="close-modal" alt="close">
+    <div class="thanks-block">
+      <p>Ваша заявка принята! <br><span>Наш менеджер скоро свяжется с вами.</span></p>
+      <img src="img/pen.png" class="pen" alt="pen">
+    </div>
+  </div>
+  <div class="modal spec-modal">
+    <img src="img/close.png" alt="" class="close-modal mobile-close">
+    <div class="container column">
+      <div class="big-table">
+        <div class="kinda-table">
+          <h5>Slipper X ONE Model</h5>
+          <p><span class="spec-name">Входное напряжение</span><span class="spec-property">3,3 кг</span></p>
+          <p><span class="spec-name">Размер</span><span class="spec-property big-property first-property">227 х 155 х 133 мм</span></p>
+          <p><span class="spec-name">Запас хода</span><span class="spec-property">10 км</span></p>
+          <p><span class="spec-name">Интервал</span><span class="spec-property">от +5°С до +30°С</span></p>
+          <p><span class="spec-name">Максимальный угол подъема</span><span class="spec-property">9°</span></p>
+          <p><span class="spec-name">Максимальная грузоподъемность</span><span class="spec-property">60 кг</span></p>
+          <p><span class="spec-name">Угол наклона вперед назад</span><span class="spec-property">50°</span></p>
+          <p><span class="spec-name">Угол наклона влево вправо</span><span class="spec-property">80°</span></p>
+        </div>
+        <div class="kinda-table">
+          <h5>Батарея</h5>
+          <p><span class="spec-name">Мощность </span><span class="spec-property">1,9 Ач</span></p>
+          <p><span class="spec-name">Типы используемых батарей</span><span class="spec-property">18650</span></p>
+          <p><span class="spec-name">Продолжительность зарядки</span><span class="spec-property">2 - 3 ч</span></p>
+          <p><span class="spec-name">Тип АКБ</span><span class="spec-property big-property first-property">от литий-йонный</span></p>
+          <p><span class="spec-name">Срок службы АКБ</span><span class="spec-property big-property">примерно 2 года или 500 циклов/разряда</span></p>
+        </div>
+        <div class="kinda-table">
+          <h5>Мотор</h5>
+          <p><span class="spec-name">Тип мотора</span><span class="spec-property">бесщеточный DC</span></p>
+          <p><span class="spec-name">Максимальная скорость</span><span class="spec-property">до 12 км / ч</span></p>
+          <p><span class="spec-name">Размер</span><span class="spec-property">90 мм</span></p>
+          <p><span class="spec-name">Мощность</span><span class="spec-property">250 вт</span></p>
+        </div>
+        <div class="kinda-table">
+          <h5>Контроллер</h5>
+          <p><span class="spec-name">Технические параметры</span><span class="spec-property">sinewavecontrol</span></p>
+          <p><span class="spec-name">Освещение</span><span class="spec-property">LED</span></p>
+          <p><span class="spec-name">Звуковое оповещение</span><span class="spec-property big-property">сответствующий звук сигнала тревоги</span></p>
+        </div>
+        <div class="kinda-table">
+          <h5>Зарядное устройство</h5>
+          <p><span class="spec-name">Входное напряжение</span><span class="spec-property">100 в - 240 в</span></p>
+          <p><span class="spec-name">Диапозон температур зарядки</span><pn class="spec-property big-property first-property">0°С - 40°С</p>
+          <p><span class="spec-name">DC двойной выход</span><span class="spec-property">одновременный выход 29.4 v/1A</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal gallery-modal">
+    <img src="img/close.png" alt="" class="close-modal mobile-close">
+    <div class="container column">
+      <div class="gallery-block">
+        <p class="chose-color">Выберите цвет:</p>
+        <ul class="tabs">
+          <li class="active">Red</li>
+          <li>Blue</li>
+          <li>Space</li>
+        </ul>
+        <div class="fotorama active" data-nav="thumbs" data-width="660" data-maxwidth="100%">
+          <img src="img/red-1.png">
+          <img src="img/red-2.png">
+          <img src="img/red-3.png">
+          <img src="img/red-4.png">
+        </div>
+        <div class="fotorama" data-nav="thumbs" data-width="660" data-maxwidth="100%">
+          <img src="img/blue-1.png">
+          <img src="img/blue-2.png">
+          <img src="img/blue-3.png">
+          <img src="img/blue-4.png">
+        </div>
+        <div class="fotorama" data-nav="thumbs" data-width="660" data-maxwidth="100%">
+          <img src="img/space-1.png">
+          <img src="img/spase-2.png">
+          <img src="img/spase-3.png">
+          <img src="img/spase-4.png">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal instuct-modal">
+    <img src="img/close.png" alt="" class="close-modal mobile-close">
+    <div class="container column">
+        <a download href="user-manual.pdf" class="instruct-download">
+          <img src="img/instruction.png" alt="">
+        </a>
+        <p class="download-capt">Cкачать инструкцию</p>
+    </div>
+  </div>
+  <div class="modal content-modal">
+    <img src="img/close.png" alt="" class="close-modal mobile-close">
+    <div class="container column">
+        <div class="video-content some-content">
+          <div class="the-content">
+            <p class="content-caption">Заголовок для видео</p>
+            <div width="100%" height="280px"></div>
+          </div>
+          <div class="srollable-others">
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" class="active-iframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe width="136" height="77" src="https://www.youtube.com/embed/VGMmSOsNAdc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="pict-content some-content">
+          <div class="the-content">
+            <p class="content-caption">Заголовок для фото</p>
+            <div width="450" height="295"></div>
+          </div>
+          <div class="srollable-others">
+            <img src="img/gallery1.png" class="active-img" alt="">
+            <img src="img/gallery2.png" alt="">
+            <img src="img/gallery3.png" alt="">
+            <img src="img/gallery4.png" alt="">
+            <img src="img/gallery5.png" alt="">
+            <img src="img/gallery6.png" alt="">
+            <img src="img/gallery7.png" alt="">
+            <img src="img/gallery8.png" alt="">
+            <img src="img/gallery9.png" alt="">
+            <img src="img/gallery10.png" alt="">
+            <img src="img/gallery11.png" alt="">
+            <img src="img/gallery12.png" alt="">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="modal places-modal">
+    <img src="img/close.png" alt="" class="close-modal mobile-close">
+    <div class="container column">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.227608086125!2d37.63227221621933!3d55.82400858057246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b536772e9b829d%3A0x7b36bc0bfd26ac5b!2zMS3RjyDQntGB0YLQsNC90LrQuNC90YHQutCw0Y8g0YPQuy4sIDU1LCDQnNC-0YHQutCy0LAsIDEyOTUxNQ!5e0!3m2!1sru!2sru!4v1540978558020" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="places-block">
+        <input type="text" placeholder="Выберите интересующий Вас город">
+        <div class="place-block">
+          <p>Россия, Москва, <br>1-ая Останкинская улица 55, <br>TЦ ВДНХ <br><span>режим работы <br>с 10:00 до 20:00 ежедневно</span></p>
+          <div class="contacts">
+            <span>тел.: +7 (495) 295-00-00</span><br>
+            <span>e-mail: cd@ecoboom.ru</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- NAVIGATION -->
+  <div class="sidebar">
+    <a href="#"><img src="img/logo.svg" alt="" class="sidebar-logo"></a>
+    <i id="close-sidebar" class="fas fa-times"></i>
+    <div class="main-links">
+      <span class="spec-btn">спецификации</span>
+      <span class="gallery-btn">галерея</span>
+      <span class="instuct-btn">инструкция</span>
+      <span class="content-btn">контент</span>
+      <span class="places-btn">точки продаж</span>
+      <button class="open-modal white gradient-btn">Купить</button>
+    </div>
+  </div>
+  <nav class="fixed-navigation">
+    <a href="#"><img src="img/logo.svg" alt="" class="navigation-logotype"></a>
+    <div id="open-sidebar">
+      <img src="img/menu.png" alt="">
+    </div>
+    <div class="main-links">
+      <span class="spec-btn">спецификации</span>
+      <span class="gallery-btn">галерея</span>
+      <span class="instuct-btn">инструкция</span>
+      <span class="content-btn">контент</span>
+      <span class="places-btn">точки продаж</span>
+      <button class="open-modal white gradient-btn">Купить</button>
+      <img src="img/close.png" alt="" class="close-modal">
+    </div>
+  </nav>
+  <main class="wrapper" id="skrollr-body" data-spy="scroll" data-target="#right-nav" data-offset="10000">
+    <!-- FIRST SECTION -->
+    <section class="first-section" id="first-section" data-widget="first-section">
+      <div class="first-block wow fadeOut" data-wow-delay="6.5s" data-wow-duration="2s"><p>причина одна</p></div>
+      <div class="centered-container column wow fadeIn" data-wow-delay="8s">
+        <span class="brand-name">
+          <img src="img/logo.svg" alt="" class="logotype">
+          <h2 class="red">X ONE</h2>
+        </span>
+        <p class="white">
+          Я - Слиппер, и это моя вселенная для Игроков.
+          <br>
+          Играй без правил прямо здесь и сейчас, а
+          результат...
+          <br>
+          Результат — это ТЫ сам!
+        </p>
+        <button class="open-modal white gradient-btn">Купить</button>
+      </div>
+      <div class="pointer" id="sec-1"></div>
+    </section>
+    <!-- SECOND SECTION -->
+    <section class="second-section" id="second-section" data-widget="second-section">
+      <div class="container">
+        <div class="image-column">
+          <img src="img/second-section/x-second-section.png" alt="" data-center-top="transform:translateY(100px); opacity:0;" data-center-bottom="opacity:1; transform:translateY(0px);" data-top-bottom="transform:translateY(-100px);">
+        </div>
+        <div class="text-column">
+          <h1 class="blue">Дизайн <br> который ты заслужил</h1>
+          <p class="white">
+          Slipper <span class="red">X ONE</span> призван вызывать восторг.
+          <br>
+          Глубокие начертания корпуса с декоративными элементами
+          <br>
+          делают его идеальным продолжением твоей идеи.
+          </p>
+        </div>
+      </div>
+      <div class="pointer" id="sec-2"></div>
+    </section>
+    <!-- THIRD SECTION -->
+    <section class="third-section" id="third-section" data-widget="third-section">
+      <div class="container column">
+        <div class="image-column">
+          <div class="image-puma" data-bottom-top="transform:translateY(0); opacity:0;" data-center-center="transform:translateY(-6%); opacity:1;" data-top-bottom="transform:translateY(-20%); opacity:0;" style="opacity: 0.519591;"></div>
+          <h1 class="title blue">Грациозность в движении</h1>
+          <img src="img/third-section/slipper.png" alt="" class="slipper-image">
+        </div>
+        <div class="feature-section">
+          <h6 class="white title">SLIPPER X ONE<span class="red"> МОЖЕТ!</span></h6>
+          <div class="column-wrapper space-around">
+            <div class="column-text">
+              <div class="img-block"><img src="img/third-section/feature-1.svg" alt="" class="icon"></div>
+              <p class="white">
+              Адаптивный мотор нового <wbr>поколения</wbr> размещенный
+              в корпусе Slipper x one, обладает стабильным
+              и динамическим разгоном до 12 км/ч.
+              </p>
+            </div>
+            <div class="column-text">
+              <div class="img-block"><img src="img/third-section/feature-2.svg" alt="" class="icon"></div>
+              <p class="white">
+              Высококачественные элементы из которых
+              выполнен сам мотор, готовы к высоким
+              нагрузкам и настоящим приключениям.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pointer" id="sec-3"></div>
+    </section>
+    <!-- FOURTH SECTION -->
+    <section class="fourth-section" id="fourth-section" data-widget="fourth-section">
+      <div class="container column">
+        <h1>ВОСТОРГ ИГРЫ</h1>
+        <h6>новый мир ждет тебя в самых необычных местах</h6>
+        <p>
+          Slipper <span class="red">Х ONE</span> исследует новые локации для совместных приключений.
+          Ты можешь заявить о себе другим участникам игры на своем Slipper.
+          А так же ты можешь использовать ДВА Slipper для самой важной гонки.
+          Это в полной мере раскроет его возможности.</p>
+        </p>
+      </div>
+      <div class="img-block">
+        <img src="img/fourth-section/island.png" alt="" class="island">
+        <div
+        data-500-top="transform:translateY(-50%) translateX(0%) scale(1); background-image: url(img/fourth-section/red.png); width: 200px; height: 150px;"
+        data-50-top="transform:translateY(270%) translateX(-690%) scale(0.3); background-image: url(img/fourth-section/placeholder.png); width: 100px; height: 150px;"
+        data-50-top="transform:translateY(270%) translateX(-690%) scale(0.3); background-image: url(img/fourth-section/placeholder.png); width: 100px; height: 150px;" class="slipper"></div>
+      </div>
+      <div class="pointer" id="sec-4"></div>
+    </section>
+    <!-- FIFTH SECTION -->
+    <section class="fifth-section" id="fifth-section" data-widget="fifth-section">
+      <div class="container column">
+        <h6>смелое превосходство над другими</h6>
+        <h1>В деталях</h1>
+        <p>Над Slipper <span class="red">Х ONE</span> работала профессиональная команда выдающихся инженеров.</p>
+				<p> Благодаря этому Slipper унаследовал степень защиты от пыли и влаги IP65, а так же Аккумуляторную батарею общей емкостью 1.9 Ач.</p>
+        <p>Что позволит тебе проехать до 10 км на одном заряде и всегда брать свой Slipper в поездку, даже при путешествии с помощью Авиалиний.</p>
+      </div>
+      <div class="transforming-images">
+        <img data-bottom-center="transform:translateY(0vh);  opacity:1;" data-center-center="transform:translateY(24vh);  opacity:1;" src="img/fifth-section/layer-1.png" alt="" class="layer-1">
+        <img data-bottom-center="transform:translateY(0vh);  opacity:1;" data-center-center="transform:translateY(20vh);  opacity:1;" src="img/fifth-section/layer-2.png" alt="" class="layer-2">
+        <img data-bottom-center="transform:translateY(0vh);  opacity:1;" data-center-center="transform:translateY(20vh);  opacity:1;" src="img/fifth-section/layer-3.png" alt="" class="layer-3">
+        <img data-bottom-center="transform:translateY(0vh);  opacity:1;" data-center-center="transform:translateY(24vh);  opacity:1;" src="img/fifth-section/layer-4.png" alt="" class="layer-4">
+      </div>
+      <div class="pointer" id="sec-5"></div>
+    </section>
+    <!-- SIXTH SECTION -->
+    <section class="sixth-section" id="sixth-section" data-widget="sixth-section">
+      <div class="main-section">
+        <div class="floating-text">
+          <h6 class="white">Slipper x one  —
+          <br>
+          <span class="red">продолжение тебя</span>.
+          <br>
+          в любое время. в любую
+          <br>
+          погоду
+        </h6>
+        </div>
+        <div class="rounding-person">
+          <div data-0-top="background-image: url(img/sixth-section/zero-deg-man.png)" data-50-top="background-image: url(img/sixth-section/thirty-deg-man.png)"  data-100-top="background-image: url(img/sixth-section/sixty-deg-man.png)" data-150-top="background-image: url(img/sixth-section/ninty-deg-man.png)" data-200-top="background-image: url(img/sixth-section/one-twenty-deg-man.png)" data-250-top="background-image: url(img/sixth-section/one-fifty-deg-man.png)" data-300-top="background-image: url(img/sixth-section/one-eghty-deg-man.png)" data-350-top="background-image: url(img/sixth-section/two-ten-deg-man.png)" data-400-top="background-image: url(img/sixth-section/two-fourty-deg-man.png)" data-450-top="background-image: url(img/sixth-section/two-seventy-deg-man.png)" data-500-top="background-image: url(img/sixth-section/three-deg-man.png)" data-600-top="background-image: url(img/sixth-section/three-sixty-deg-man.png)"
+           class="person"></div>
+           <div class="btn-block">
+             <div class="left-ar">
+               <img src="img/red-round-arrow.svg" alt="">
+             </div>
+             <div class="right-ar">
+               <img src="img/white-round-arrow.svg" alt="">
+             </div>
+           </div>
+        </div>
+      </div>
+      <div class="centered-text">
+        <h6 class="white">Фотографии Slipper <span class="red">X ONE</span> со всего мира </h6>
+        <p class="white">Ночное LED освещение украсит твое движение</p>
+      </div>
+      <div class="footer-section">
+        <img src="img/sixth-section/footer-bg-1.png" alt="">
+        <img src="img/sixth-section/footer-bg-2.png" alt="">
+        <img src="img/sixth-section/footer-bg-3.png" alt="">
+        <img src="img/sixth-section/footer-bg-4.png" alt="">
+        <img src="img/sixth-section/6photo.png" alt="" class="mobile-photo">
+        <img src="img/sixth-section/footer-bg-5.png" alt="">
+      </div>
+      <div class="pointer" id="sec-6"></div>
+    </section>
+    <!-- SEVENTH SECTION -->
+    <section class="seventh-section" id="seventh-section" data-widget="seventh-section">
+      <div class="container column">
+        <div class="text-block">
+          <h1 class="blue">Исполнение в трех <br> цветовых решениях</h1>
+          <p class="white">
+							<span class="br-block"> По умолчанию Slipper </span><span class="red">X ONE</span> <span class="br-block">предлагается в трех цветовых решениях <br> на любой вкус. </span> <span class="br-block">Red Black, Blue Black и Space.</span></p>
+						 <!-- По умолчанию Slipper <span class="red">X ONE</span> предлагается в трех цветовых решениях </br> на любой вкус. <br> Red Black, Blue Black и Space.</p> -->
+        </div>
+        <div class="slipper-wrapper">
+          <img src="img/seventh-section/slipper-blue.png" class="wow animate fadeInLeft"  data-wow-offset="100" data-wow-delay="0">
+          <img src="img/seventh-section/slipper-red.png" class="fadeInLeft animate wow" data-wow-delay=".5s" data-wow-offset="100">
+          <img src="img/seventh-section/sliper-space.png" class="fadeInLeft animate wow" data-wow-delay="1s" data-wow-offset="100">
+        </div>
+      </div>
+      <div class="pointer" id="sec-7"></div>
+    </section>
+    <!-- EIGHTH SECTION -->
+    <section class="eighth-section column" id="eighth-section" data-widget="eighth-section">
+      <div class="container number-container">
+        <div class="number-block">
+          <div class="elipse"></div>
+          <svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" height="263">
+            <defs>
+              <pattern id="number-bg" width="800" height="800" patternUnits="userSpaceOnUse"><image x="0" y="0" width="800" height="800" xlink:href="img/eighth-section/1bg.png" data-anchor-target="#eighth-section" data-top-center="transform: translate(0px, 0px)"  data-bottom-top="transform: translate(0px, -600px)" style="transform: translate(0px, -275px);" class="skrollable skrollable-between"></image>
+              </pattern>
+            </defs>
+            <img class="qua-img" src="img/1.png" alt="1">
+          </svg>
+        </div>
+        <div class="text-block">
+          <h1 class="blue">Качество</h1>
+          <h6 class="white">1 год гарантии</h6>
+          <p class="white">Твоя уверенность в надежности — Это наша упорная работа.<br> Долговечность Slipper <span class="red">X ONE</span> сопровождается<br> гарантией в 1 год от производителя.</p>
+        </div>
+      </div>
+      <footer>
+        <div class="container space-between">
+          <div class="left-column">
+            <a href="https://ecoboom.ru/" class="small">
+              <img src="img/eighth-section/logo-footer.svg" alt="" class="footer-image">
+            </a>
+            <div class="small">
+              <a href="#" class="logo-footer-anc"><img src="img/logo.png" alt="" class="logo-footer"></a>
+              <a href="https://drive.google.com/file/d/0B8F6zt0LrQWWYTlpcnRnSGZZaVRUZHMwR1dTSXFzdTVXWjIw/view">политика безопасности <br> (пользовательское согласшние)</a>
+            </div>
+          </div>
+          <div class="icon-list">
+            <a href="">
+              <img class="soc-img" src="img/eighth-section/vk.svg" alt="">
+            </a>
+            <a href="">
+              <img class="soc-img" src="img/eighth-section/youtube.svg" alt="">
+            </a>
+            <a href="">
+              <img class="soc-img" src="img/eighth-section/instagram.svg" alt="">
+            </a>
+            <a href="">
+              <img class="soc-img" src="img/eighth-section/facebook.svg" alt="">
+            </a>
+          </div>
+          <div class="right-column">
+            <div class="row">
+              <img class="icon-right" src="img/eighth-section/phone.svg" alt="">
+              <p class="white">8 495 295 00 00</p>
+            </div>
+            <div class="row">
+              <img class="icon-right" src="img/eighth-section/envelope.svg" alt="">
+              <p class="white">sales@ecoboom.ru</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="pointer" id="sec-8"></div>
+    </section>
+  </main>
+  <!-- CONNECT SCRIPTS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js" class="responsive-script"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js"></script>
+  <script src="js/tornado.js" class="preloader-script"></script>
+  <script src="js/client.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
