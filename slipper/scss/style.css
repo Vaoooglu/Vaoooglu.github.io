@@ -2021,6 +2021,8 @@ section {
           font-weight: 300;
           margin-left: 20px; }
       @media screen and (max-width: 640px) {
+				.eighth-section footer .right-column .row:nth-child(2) {
+          padding-left: 10px; }
         .eighth-section footer .right-column {
 					/* margin-top: 100px; */
 					position: absolute;
