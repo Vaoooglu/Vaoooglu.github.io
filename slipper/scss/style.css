@@ -438,7 +438,7 @@ section {
 			}}
 			@media(max-width: 400px){
 				.modal.buy-modal .column {
-					padding-left: 30px; }
+					padding-left: 10px; }
 			}
     @media screen and (min-width: 700px) {
       .modal.buy-modal {
@@ -660,7 +660,13 @@ section {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-top: 10px; }
+				margin-top: 10px; }
+				@media screen and (max-width: 460px) {
+				.modal .footer-section .column .form-group {
+					margin-top: 10px; }
+				}
+
+
         .modal .footer-section .column .form-group .wrapper {
           width: 100%;
           height: auto;
@@ -1074,10 +1080,10 @@ main {
 
 @media screen and (max-width: 460px) {
 			.price-x {
-				font-size: 20px;
+				font-size: 16px;
 		}
 		.finish-price {
-			font-size: 15px;
+			font-size: 12px;
 		}
 }
 
