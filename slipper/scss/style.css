@@ -1957,7 +1957,18 @@ section {
               font-size: 10px; } }
         @media screen and (max-width: 640px) {
           .eighth-section footer .left-column .small {
-            width: 100%; } }
+						width: 100%; } }
+				@media screen and (max-hight: 500px){
+					.eighth-section footer .left-column .small{
+						height: 14vh;
+					}
+				}
+				@media screen and (max-hight: 330px){
+					.eighth-section footer .left-column .small{
+						height: 20vh;
+					}
+				}
+
     .eighth-section footer .icon-list {
       position: absolute;
       left: 50%;
@@ -1985,7 +1996,7 @@ section {
         .eighth-section footer .icon-list {
           left: auto;
           right: -22px;
-          width: 23%; } }
+          width: 21%; } }
       /* } */
     .eighth-section footer .right-column {
       width: 35%;
