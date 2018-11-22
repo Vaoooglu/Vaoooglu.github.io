@@ -1548,7 +1548,12 @@ section {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative; }
+		position: relative; }
+
+		@media screen and (max-height: 500px) {
+      .fifth-section .transforming-images {
+				margin-top: -140px; } }
+
     @media screen and (max-width: 600px) {
       .fifth-section .transforming-images {
         width: 50%;
@@ -1958,12 +1963,12 @@ section {
         @media screen and (max-width: 640px) {
           .eighth-section footer .left-column .small {
 						width: 100%; } }
-				@media screen and (max-hight: 500px){
+				@media screen and (max-height: 500px){
 					.eighth-section footer .left-column .small{
 						height: 14vh;
 					}
 				}
-				@media screen and (max-hight: 330px){
+				@media screen and (max-height: 330px){
 					.eighth-section footer .left-column .small{
 						height: 20vh;
 					}
