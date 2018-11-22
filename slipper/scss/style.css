@@ -435,8 +435,11 @@ section {
         margin-left: -300px;
         margin-top: 100px;
         display: none;
-      }
-      }
+			}}
+			@media(max-width: 400px){
+				.modal.buy-modal .column {
+					padding-left: 30px; }
+			}
     @media screen and (min-width: 700px) {
       .modal.buy-modal {
         overflow-x: hidden; } }
@@ -565,8 +568,8 @@ section {
           height: 40px;
           text-align: center;
           background-color: #EFEFEF;
-          border: none; }
-          .button-group button:hover {
+					border: none; }
+					.button-group button:hover {
             color: #FF4343; }
         .button-group .square {
           background-color: #EFEFEF;
@@ -582,7 +585,18 @@ section {
               -ms-flex-align: center;
                   align-items: center;
           font-weight: 600;
-          font-size: 16px; }
+					font-size: 16px; }
+					@media screen and (max-width: 460px) {
+					.button-group button {
+						width: 30px;
+          height: 35px;
+					}
+					.button-group .square {
+						width: 35px;
+          height: 35px;
+					}}
+
+
       .modal .mini-section .small-column .btn {
         width: 160px;
         padding: 10px 0px;
@@ -591,14 +605,24 @@ section {
         color: #FFFFFF;
         border-radius: 5px;
         margin-top: 70px; }
+				@media screen and (max-width: 850px) {
+					.modal .mini-section .small-column .btn {
+						margin-top: 22px;
+					z-index: 2;
+					}
+				}
+
 
 				@media screen and (max-width: 460px) {
 				.modal .mini-section .small-column .btn {
-					width: 130px;}
+					width: 130px;
+				}
 				.button-group {
 					margin-left: 235px;
-				}
-				}
+				}}
+				@media screen and (max-width: 400px) {
+					.modal .mini-section .small-column .btn {
+						width: 110px;}}
 
         .invite-block {
           text-align: center;
@@ -648,7 +672,13 @@ section {
                   justify-content: space-between; }
         .modal .footer-section .column .form-group p {
           font-size: 20px;
-          font-weight: 600; }
+					font-weight: 600; }
+					@media screen and (max-width: 460px){
+					.modal .footer-section .column .form-group p {
+						font-size: 16px;
+					}}
+
+
         .modal .footer-section .column .form-group .input-group {
           width: 48%;
           height: auto;
@@ -921,9 +951,16 @@ section {
 			margin-left: 280px;
 			}
 	}
+
+
 	@media screen and (max-width: 550px){
 	.button-group {
 		margin-left: 235px;
+	}
+}
+@media screen and (max-width: 400px){
+	.button-group {
+		margin-left: 185px;
 	}
 }
 .modal-thanks img {
@@ -1034,6 +1071,16 @@ main {
   font-size: 18px;
   margin-top: -60px;
 }
+
+@media screen and (max-width: 460px) {
+			.price-x {
+				font-size: 20px;
+		}
+		.finish-price {
+			font-size: 15px;
+		}
+}
+
 .fixed-navigation {
   width: 100%;
   height: 106px;
