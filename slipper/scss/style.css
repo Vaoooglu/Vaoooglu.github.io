@@ -436,7 +436,7 @@ section {
         margin-top: 100px;
         display: none;
 			}}
-			@media(max-width: 400px){
+			@media(max-width: 640px){
 				.modal.buy-modal .column {
 					padding-left: 10px; }
 			}
