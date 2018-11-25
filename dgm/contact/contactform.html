@@ -11,7 +11,7 @@
 <body>
 <div id="leftborder"></div>
 	<header class="transparent">
-			<a class="logo" href="../index.html"><img src="../assets/img/dgm-svg-full.svg" alt="logo dongormash">
+			<a class="logo" href="../index.html"><img src="../assets/img/dgm-logo.svg" alt="logo dongormash">
 			</a>
 		<div class="container">
 			<div id="MenuIcon">
@@ -42,34 +42,139 @@
 
 
 <section class="content_sidebar">
-	<div class="sidebar_nav_wrapper">
-		<nav class="sidebar_nav">
-			<div class="sidebar_nav_items">
-				<a href="index.html">Контакты</a>
-				<br>
-				<a href="contactform.html">Связаться с нами</a>
-			</div>
-		</nav>
-	</div>
-	<header class="minor_header">
+	<header class="minor_header" id="minor_headerForm">
 			<h1 class="heading_header heading_h2">Связаться с нами</h1>
 	</header>
-	<section class="sidebar_content">
-		<!-- <div class="history_foto">
-			 <img src="../assets/img/history1.jpg" alt="">
-		</div> -->
-		<div class="history_content">
-			<h3 class="heading_h3">Миссия</h3>
-			<p> Мы стремимся к совершенству, предлагая нашим клиентам эффективные решения на пути от проектирования до эксплуатации оборудования для добычи, транспортировки и переработки природных ресурсов
-			</p>
-		</div>
 
-		<div class="history_content">
-			<h3 class="heading_h3">Видение</h3>
-			<p> Стать одной из лидирующих компаний, которая использует наиболее прогрессивные методы удовлетворения потребностей клиентов и  производит востребованное на каждом из основных континентальных рынков оборудование для добычи, транспортировки и переработки природных ресурсов.
-			</p>
-		</div>
+
+
+
+	<section class="form-content">
+			<div class="form-content_wrapper ">
+				<form id="comment-form" accept-charset="UTF-8" class="comment-form">
+						<div class="fieldset fieldset-firstName">
+								<div class="fieldset__label">
+									<label for="field-firstName">
+										Имя
+									<span class="fieldset__required">*</span>
+									</label>
+								</div>
+								<div class="fieldset__input">
+										<input type="text"
+											id="field-firstName"
+											name="fields-firstName"
+											value=""
+											placeholder="Введите имя"
+											autofocus/>
+											<!-- required -->
+											<div class="error-box"></div>
+								</div>
+     					</div>
+
+						<div class="fieldset fieldset-lastName">
+								<div class="fieldset__label">
+									<label for="field-lastName">
+											Фамилия
+									</label>
+								</div>
+								<div class="fieldset__input">
+									<input type="text"
+										id="field-lastName"
+										name="fields-lastName"
+										value=""
+										placeholder="Введите фамилию" />
+								</div>
+						</div>
+						<div class="fieldset fieldset-email">
+								<div class="fieldset__label">
+									<label for="field-email">
+										Электронная почта
+										<span class="fieldset__required">*</span>
+									</label>
+								</div>
+								<div class="fieldset__input">
+									<input type="email"
+										id="field-email"
+										name="field-email"
+										value=""
+										placeholder="example@example.com"
+										/>
+										<!-- required -->
+									<div class="error-box"></div>
+								</div>
+
+
+						</div>
+						<div class="fieldset fieldset-phoneNumber ">
+							<div class="fieldset__label">
+								<label for="field-phoneNumber">
+									Телефон
+									<span class="fieldset__required">*</span>
+								</label>
+							</div>
+							<div class="fieldset__input">
+								<input type="tel"
+									id="field-phoneNumber"
+									name="field-phoneNumber"
+									value=""
+									placeholder="7(777)777-7777"
+									/>
+									<!-- required -->
+									<div class="error-box">
+									</div>
+							</div>
+
+						</div>
+						<div class="fieldset fieldset-company">
+							<div class="fieldset__label">
+								<label for="field-company">
+									Компания
+								</label>
+							</div>
+							<div class="fieldset__input">
+								<input type="text"
+											id="field-company"
+											name="fields-company"
+											value=""
+											placeholder="Введите название" />
+							</div>
+						</div>
+						<div class="fieldset fieldset-commentOrQuestion">
+							<div class="fieldset__label">
+								<label for="field-commentOrQuestion">
+									Комментарий
+									<span class="fieldset__required">*</span>
+								</label>
+							</div>
+							<div class="fieldset__input">
+								<textarea name="fields-commentOrQuestion"
+										id="field-commentOrQuestion"
+										cols="30"
+										rows="10"
+										placeholder="Введите Ваш вопрос или комментарий..."></textarea>
+								<div class="error-box">
+									</div>
+							</div>
+
+						</div>
+						<div class="form_button">
+							<input type="submit" value="Отправить" id="btn-form">
+						</div>
+				</form>
+			</div>
+
 	</section>
+	<div class="popup-wrapper">
+		<div class="popup-thank-you">
+			<p>Спасибо.</p>
+			<p>Сообщение отправлено.</p>
+			<div class="close-popup-thank-you"></div>
+		</div>
+	</div>
+</section>
+
+
+
 
 
 
@@ -130,6 +235,7 @@
 	</div>
 	</footer>
 		<script src="../assets/js/jquery-3.3.1.min.js"></script>
+		<script src="../assets/js/jquery.maskedinput.js"></script>
 		<script src="../assets/js/script.js"></script>
 	</body>
 	</html>
