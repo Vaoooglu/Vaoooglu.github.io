@@ -6,7 +6,7 @@
 	.sidebar_nav_wrapper{
 		font-size: 14px;
 		font-family: $elektra;
-		width: 270px;
+		width: 300px;
 		max-height: 400px;
 		text-transform: uppercase;
 		background-color: $primary;
@@ -38,7 +38,7 @@
 	}
 	.minor_header{
 		float: left;
-		margin-left: 350px;
+		margin-left: 400px;
 		margin-bottom:60px;
 		margin-top:40px;
 		color:$primary;
@@ -66,28 +66,65 @@
 		// height:2px;
 	}
 	.sidebar_content{
+		position: relative;
 		float: left;
 		min-height: 400px;
-		margin-left: 300px;
-		margin-right: 30px;
+		// margin-left: 350px;
+
 		font-family:$verdana;
 		font-size:14px;
-		@media screen and (max-width: 725px){
+		z-index: -5;
+		// @media screen and (max-width: 725px){
+		// 	margin-left: 12px;}
+		.sidebar_content_inner{
+		//  margin-right: 30px;
+		 margin-left: 300px;
+		 @media screen and (max-width: 725px){
 			margin-left: 12px;
+			margin-right: 0px;
+
 		}
-		img{
-			max-width: 100%; height: auto;
+		}
+		.history_foto{
+			overflow: hidden;
+			margin-bottom: 50px;
+		.history_foto_img{
+			width: 100%;
+			animation: scale_img 30s infinite linear;
 			@media screen and (max-width: 725px){
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+
 			}
 		}
-		img:hover{
+		// img:focus{
+		// 	transform: scale(1.3);
+		// }
+		@keyframes scale_img {
+			0%{transform: scale(1);}
+			50% {transform: scale(1.2);}
+			100%{transform: scale(1);}
+			}
 
-		}
+		// function come(elem) {
+		// 	var docViewTop = $(window).scrollTop(),
+		// 		docViewBottom = docViewTop + $(window).height(),
+		// 		elemTop = $(elem).offset().top,
+		// 		elemBottom = elemTop + $(elem).height();
+
+		// 	return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+		// }
+
+		// юзать так
+		// if (come("#section2")) {
+		// 		...
+		// }
+	}
     .history_content{
 			padding-bottom: 50px;
+			margin-left: 30px;
+			margin-right: 30px;
 			.heading_h3{
 				border-bottom-color: $unprimary;
 			}

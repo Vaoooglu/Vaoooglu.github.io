@@ -1,8 +1,8 @@
 @import 'fonts';
 @import 'values';
-.header_container{
+#contactform{
 	height: 165px;
-	color: #fff;
+	background-color: #fff;
 	// border: 1px solid white;
 }
 .form-content{
@@ -24,7 +24,7 @@
 	// position:relative;
 		width: 80%;
     float: left;
-		margin-left: 35%;
+		margin-left: 350px;
 		margin-bottom: 40px;
     // margin-right: -100%;
     position: relative;
@@ -46,6 +46,7 @@
 		}
 		.error-box{
 			font-size: 12px;
+			width: 60%;
 		}
 		.fieldset{
 			padding-bottom: 30px;
@@ -81,14 +82,14 @@
 	background-color: #1a2930;
     content: "";
     display: block;
-    width: 270px;
+    width: 300px;
     // height: 100%;
     position: absolute;
     top: -165px;
     bottom: 0;
     // left: -25%;
 		// z-index: 9999;
-		@media screen and (max-width: 1000px){
+		@media screen and (max-width: 725px){
 			display: none;
 		}
 }
@@ -98,7 +99,7 @@
 	height: 100vh;
 	left: 0;
 	top: 0;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .7);
 	display: none;
 	z-index: 1;
 }

@@ -225,4 +225,36 @@ $(document).ready(function() {
 	    }
 	});
 
- 	});
+	 });
+
+
+// 	 function come(elem) {
+// 			var docViewTop = $(window).scrollTop(),
+// 				docViewBottom = docViewTop + $(window).height(),
+// 				elemTop = $(elem).offset().top,
+// 				elemBottom = elemTop + $(elem).height();
+
+// 			return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+// 		}
+
+// 		if (come(".history_foto img")) {
+// this.css("display: none");
+// 		}
+
+// function inWindow(elem){
+//   var scrollTop = $(window).scrollTop();
+//   var windowHeight = $(window).height();
+//   var currentEls = $(elem);
+//   var result = [];
+//   currentEls.each(function(){
+//     var el = $(this);
+//     var offset = el.offset();
+//     if(scrollTop <= offset.top && (el.height() + offset.top) < (scrollTop + windowHeight))
+//       result.push(this);
+//   });
+//   return $(result);
+// }
+// var boxesInWindow = inWindow("img.history_foto_img");
+
+// // сделаем фон этих элементов красным
+// boxesInWindow.css("animation", "scale_img 30s infinite linear");

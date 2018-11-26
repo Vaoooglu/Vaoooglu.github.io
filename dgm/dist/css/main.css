@@ -10,6 +10,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
 @font-face {
   font-family: 'Verdana';
   src: local("Verdana"), url("../../assets/fonts/Verdana.woff") format("woff"), url("../../assets/fonts/Verdana.ttf") format("ttf"), url("../../assets/fonts/Verdana.eot") format("eot");
@@ -43,7 +46,7 @@
 .content_sidebar .sidebar_nav_wrapper {
   font-size: 14px;
   font-family: "ElektraTextPro", sans-serif;
-  width: 270px;
+  width: 300px;
   max-height: 400px;
   text-transform: uppercase;
   background-color: #b70021;
@@ -83,7 +86,7 @@
 
 .content_sidebar .minor_header {
   float: left;
-  margin-left: 350px;
+  margin-left: 400px;
   margin-bottom: 60px;
   margin-top: 40px;
   color: #b70021;
@@ -112,35 +115,82 @@
 }
 
 .content_sidebar .sidebar_content {
+  position: relative;
   float: left;
   min-height: 400px;
-  margin-left: 300px;
-  margin-right: 30px;
   font-family: "Verdana", serif;
   font-size: 14px;
+  z-index: -5;
+}
+
+.content_sidebar .sidebar_content .sidebar_content_inner {
+  margin-left: 300px;
 }
 
 @media screen and (max-width: 725px) {
-  .content_sidebar .sidebar_content {
+  .content_sidebar .sidebar_content .sidebar_content_inner {
     margin-left: 12px;
+    margin-right: 0px;
   }
 }
 
-.content_sidebar .sidebar_content img {
-  max-width: 100%;
-  height: auto;
+.content_sidebar .sidebar_content .history_foto {
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.content_sidebar .sidebar_content .history_foto .history_foto_img {
+  width: 100%;
+  -webkit-animation: scale_img 30s infinite linear;
+  animation: scale_img 30s infinite linear;
 }
 
 @media screen and (max-width: 725px) {
-  .content_sidebar .sidebar_content img {
+  .content_sidebar .sidebar_content .history_foto .history_foto_img {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
+@-webkit-keyframes scale_img {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale_img {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 .content_sidebar .sidebar_content .history_content {
   padding-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .content_sidebar .sidebar_content .history_content .heading_h3 {
@@ -248,9 +298,9 @@
   src: url("../../assets/fonts/EtelkaTextItalic.otf") format("opentype");
 }
 
-.header_container {
+#contactform {
   height: 165px;
-  color: #fff;
+  background-color: #fff;
 }
 
 .form-content {
@@ -266,7 +316,7 @@
 .form-content_wrapper {
   width: 80%;
   float: left;
-  margin-left: 35%;
+  margin-left: 350px;
   margin-bottom: 40px;
   position: relative;
   min-height: 50rem;
@@ -298,6 +348,7 @@
 
 .form-content_wrapper .error-box {
   font-size: 12px;
+  width: 60%;
 }
 
 .form-content_wrapper .fieldset {
@@ -335,13 +386,13 @@
   background-color: #1a2930;
   content: "";
   display: block;
-  width: 270px;
+  width: 300px;
   position: absolute;
   top: -165px;
   bottom: 0;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 725px) {
   .form-content:before {
     display: none;
   }
@@ -353,7 +404,7 @@
   height: 100vh;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   display: none;
   z-index: 1;
 }
@@ -403,6 +454,35 @@
   top: 11px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+@font-face {
+  font-family: 'Verdana';
+  src: local("Verdana"), url("../../assets/fonts/Verdana.woff") format("woff"), url("../../assets/fonts/Verdana.ttf") format("ttf"), url("../../assets/fonts/Verdana.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Verdana_Bold';
+  src: url("../../assets/fonts/Verdana-Bold.woff") format("woff"), url("../../assets/fonts/Verdana-Bold.ttf") format("ttf"), url("../../assets/fonts/Verdana-Bold.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Verdana_Italic';
+  src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro';
+  src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro_Bold';
+  src: url("../../assets/fonts/EtelkaTextBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro_Italic';
+  src: url("../../assets/fonts/EtelkaTextItalic.otf") format("opentype");
 }
 @font-face {
   font-family: 'Verdana';
@@ -1544,6 +1624,27 @@ a {
   font-size: 12px;
   font-weight: 100;
   color: #fff;
+}
+
+.header_container {
+  height: 165px;
+  background-color: #1A2930;
+}
+
+.sidebar_content:before {
+  background-color: #1a2930;
+  content: "";
+  display: block;
+  width: 300px;
+  position: absolute;
+  top: -165px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 725px) {
+  .sidebar_content:before {
+    display: none;
+  }
 }
 @font-face {
   font-family: 'Verdana';
