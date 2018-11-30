@@ -1,0 +1,35 @@
+@import 'fonts';
+@import 'values';
+.personnel_content{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 80px;
+	margin: 20px 60px 40px 60px;
+  color:$unprimary;
+.personnel_content_intro{
+// margin: 0;
+font-family: $verdanait;
+font-size:20px;
+line-height: 30px;
+
+}
+.personnel_content_small{
+	// margin: 0;
+	font-family: $elektra;
+	font-size:12px;
+	font-weight: 100;
+	line-height: 20px;
+}
+.personnel_content_line{
+	margin: 1px;
+}
+.personnel_content_line:after {
+	position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #1A2930;
+		width: 20%;
+		margin-top: 6px;
+}
+}
