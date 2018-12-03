@@ -22,6 +22,10 @@
 			margin-right: 30px;
 			padding-top: 20%;
 			padding-bottom:20%;
+			@media screen and (max-width: 725px){
+			padding-top: 10%;
+			padding-bottom:10%;
+			}
 
 			.sidebar_nav_items{
 				line-height: 2.5em;
@@ -32,6 +36,10 @@
 				}
 				a{
 				color: #fff;
+				&.active{
+					color: $unprimary;
+					font-weight:700;
+				}
 				}
 			}
 		}
@@ -39,8 +47,8 @@
 	.minor_header{
 		float: left;
 		margin-left: 400px;
-		margin-bottom:60px;
-		margin-top:40px;
+		margin-bottom:37px;
+		margin-top:25px;
 		color:$primary;
 		@media screen and (max-width: 725px){
 			float: inherit;
@@ -88,16 +96,18 @@
 		.history_foto{
 			overflow: hidden;
 			margin-bottom: 50px;
+
 		.history_foto_img{
 			width: 100%;
 			animation: scale_img 30s infinite linear;
+
 			@media screen and (max-width: 725px){
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
-
 			}
 		}
+
 		// img:focus{
 		// 	transform: scale(1.3);
 		// }
@@ -120,6 +130,20 @@
 		// if (come("#section2")) {
 		// 		...
 		// }
+	}
+	.history_first_foto{
+		@media screen and (min-width: 1200px){
+			position: relative;
+			height: 50vh;
+		}
+
+
+		.history_first_foto_img{
+			@media screen and (min-width: 1200px){
+				position: absolute;
+				top: -140px;
+			}
+		}
 	}
     .history_content{
 			padding-bottom: 50px;
@@ -185,5 +209,5 @@
 	}
 }
 #values_dgm{
-	max-width: 600px;
+	max-width: 560px;
 }

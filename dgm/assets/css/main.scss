@@ -112,10 +112,7 @@ body{
 	z-index: 5;
 	cursor: pointer;
 }
-.active{
-	color: $unprimary!important;
-	font-weight:700;
-}
+
 .heading_h2,.heading_h3,.heading_h4{
 	margin: 0;
 	font-weight: 400;
@@ -145,6 +142,11 @@ body{
 a{
 	cursor: pointer;
 	text-decoration: none;
+}
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 #video_background{
 	filter: grayscale(50%);
@@ -315,9 +317,6 @@ padding: 0;
 		// text-align: right;
 		// margin-right: 50px;
 		ul{
-			list-style: none;
-			padding: 0;
-			margin: 0;
 			font-family: $elektra;
 			font-size: 16px;
 			line-height: 24px;
@@ -876,7 +875,11 @@ padding: 0;
 .header_container{
 	height: 165px;
 	background-color:$unprimary;
+	@media screen and (max-width: 725px){
+	height: 120px;
+	}
 }
+
 .sidebar_content:before{
 	background-color: #1a2930;
 	content: "";

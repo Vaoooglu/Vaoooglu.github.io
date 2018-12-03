@@ -46,7 +46,7 @@ $(document).ready(function() {
 });
 
 		$(window).scroll(function () {
-			if ($(this).scrollTop() > 450) {
+			if ($(this).scrollTop() > 50) {
 					$('#MenuIcon').fadeOut("fast");
 			} else {
 					$('#MenuIcon').fadeIn("fast");
