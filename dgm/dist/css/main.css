@@ -19,6 +19,143 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
+@font-face {
+  font-family: 'Verdana';
+  src: local("Verdana"), url("../../assets/fonts/Verdana.woff") format("woff"), url("../../assets/fonts/Verdana.ttf") format("ttf"), url("../../assets/fonts/Verdana.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Verdana_Bold';
+  src: url("../../assets/fonts/Verdana-Bold.woff") format("woff"), url("../../assets/fonts/Verdana-Bold.ttf") format("ttf"), url("../../assets/fonts/Verdana-Bold.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Verdana_Italic';
+  src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro';
+  src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro_Bold';
+  src: url("../../assets/fonts/EtelkaTextBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro_Italic';
+  src: url("../../assets/fonts/EtelkaTextItalic.otf") format("opentype");
+}
+
+.large-error {
+  background-color: #f8f8f9;
+  text-align: center;
+  padding: 20% 10%;
+  background: transparent url("../../assets/img/error404.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-width: 725px) {
+  .large-error {
+    height: 0;
+    padding-top: 50%;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .large-error {
+    padding-top: 25%;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .large-error {
+    padding-top: 20%;
+  }
+}
+
+.large-error .large-error__content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+@media screen and (min-width: 725px) {
+  .large-error .large-error__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    height: 200px;
+  }
+}
+
+.large-error .large-error__content .large-error__heading {
+  font-family: "ElektraTextPro", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1;
+  color: #b70021;
+  margin: 0;
+}
+
+@media screen and (min-width: 725px) {
+  .large-error .large-error__content .large-error__heading {
+    font-size: 200px;
+    line-height: 1;
+  }
+}
+
+.large-error .large-error__content .large-error__massage {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Verdana", serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 725px) {
+  .large-error .large-error__content .large-error__massage {
+    font-size: 12px;
+  }
+}
+
+.large-error .large-error__content .large-error__button {
+  text-align: center;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.large-error .large-error__content .large-error__button .button-error {
+  background-color: #b70021;
+  font-family: "Verdana", serif;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 45px;
+  display: block;
+  text-decoration: none;
+  max-width: 213px;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.large-error .large-error__content .large-error__button .button-error:hover {
+  background-color: #1A2930;
+}
 @font-face {
   font-family: 'Verdana';
   src: local("Verdana"), url("../../assets/fonts/Verdana.woff") format("woff"), url("../../assets/fonts/Verdana.ttf") format("ttf"), url("../../assets/fonts/Verdana.eot") format("eot");

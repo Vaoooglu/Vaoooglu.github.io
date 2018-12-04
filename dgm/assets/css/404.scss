@@ -1,0 +1,95 @@
+@import 'fonts';
+@import 'values';
+// .large-error:before {
+// 	content: "";
+// 	position:absolute;
+// 	top: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	margin: auto;
+// 	height: 200px;
+// 	background: rgba(0,0,0,0.5);}
+.large-error{
+	// min-height: 100vh;
+		background-color: #f8f8f9;
+    text-align: center;
+    padding: 20% 10%;
+    background: transparent url(/assets/img/error404.jpg) center center no-repeat;
+		background-size: cover;
+
+		@media screen and (min-width: 725px) {
+		height: 0;
+    padding-top: 50%;
+    position: relative;
+		}
+
+		@media screen and (min-width: 980px) {
+			padding-top: 25%;
+			}
+			@media screen and (min-width: 1240px) {
+				padding-top: 20%;
+				}
+
+	.large-error__content{
+		margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+		vertical-align: baseline;
+		@media screen and (min-width: 725px) {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			height: 200px;
+			}
+			.large-error__heading{
+				font-family: $elektra;
+				font-weight: 700;
+				font-size: 100px;
+				line-height: 1;
+				color: $primary;
+				margin: 0;
+				@media screen and (min-width: 725px) {
+				font-size: 200px;
+				line-height: 1;
+				}
+			}
+			.large-error__massage{
+				font-size: 16px;
+				line-height: 1.5;
+				font-family: $verdana;
+				font-weight: 700;
+				margin-top: 0;
+				@media screen and (max-width: 725px) {
+					font-size: 12px;
+				}
+			}
+			.large-error__button{
+				text-align: center;
+				width: 100%;
+				margin: 0 0 20px;
+				.button-error{
+					background-color: $primary;
+					font-family: $verdana;
+					font-size: 14px;
+					text-align: center;
+					color: #ffffff;
+					text-transform: uppercase;
+					line-height: 45px;
+					display: block;
+					text-decoration: none;
+					max-width: 213px;
+					margin: 0 auto;
+					transition: all 0.3s;
+					&:hover{
+					background-color: $unprimary;
+					}
+				}
+			}
+	}
+}
