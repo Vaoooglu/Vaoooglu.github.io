@@ -6,7 +6,11 @@
 	grid-template-rows: 1fr;
 	grid-column-gap: 80px;
 	margin: 20px 60px 40px 60px;
-  color:$unprimary;
+	color:$unprimary;
+	@media screen and (max-width: 840px){
+		grid-template-columns: 1fr;
+		grid-template-rows: auto auto;
+	}
 .personnel_content_intro{
 // margin: 0;
 font-family: $verdanait;
