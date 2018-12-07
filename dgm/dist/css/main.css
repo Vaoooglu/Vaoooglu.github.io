@@ -22,6 +22,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&subset=cyrillic,cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&subset=cyrillic,cyrillic-ext");
 @font-face {
   font-family: 'Verdana';
   src: local("Verdana"), url("../../assets/fonts/Verdana.woff") format("woff"), url("../../assets/fonts/Verdana.ttf") format("ttf"), url("../../assets/fonts/Verdana.eot") format("eot");
@@ -35,6 +38,16 @@
 @font-face {
   font-family: 'Verdana_Italic';
   src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
 }
 
 @font-face {
@@ -169,6 +182,16 @@
 @font-face {
   font-family: 'Verdana_Italic';
   src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
 }
 
 @font-face {
@@ -453,6 +476,16 @@
 }
 
 @font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
+}
+
+@font-face {
   font-family: 'ElektraTextPro';
   src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
 }
@@ -640,6 +673,16 @@
 }
 
 @font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
+}
+
+@font-face {
   font-family: 'ElektraTextPro';
   src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
 }
@@ -666,6 +709,16 @@
 @font-face {
   font-family: 'Verdana_Italic';
   src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
 }
 
 @font-face {
@@ -1101,10 +1154,6 @@ ul {
 }
 
 .container .transparent_nav ul li a:hover {
-  -webkit-transform: scale(0.9);
-  transform: scale(0.9);
-  -webkit-transform: translateY(2px);
-  transform: translateY(2px);
   color: #1A2930;
 }
 
@@ -1323,6 +1372,16 @@ ul {
   }
 }
 
+.newsmedia .news-item {
+  color: #b70021;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.newsmedia .news-item:hover {
+  color: #1A2930;
+}
+
 .newsmedia .heading_h3 {
   border-bottom-color: #1A2930;
 }
@@ -1332,7 +1391,6 @@ ul {
 }
 
 .newsmedia .heading_h4 {
-  color: #b70021;
   padding-right: 70px;
   background-image: url("../../assets/img/right-arrow.svg");
   background-repeat: no-repeat;
@@ -1839,6 +1897,175 @@ ul {
 }
 
 @font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro';
+  src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro_Bold';
+  src: url("../../assets/fonts/EtelkaTextBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'ElektraTextPro_Italic';
+  src: url("../../assets/fonts/EtelkaTextItalic.otf") format("opentype");
+}
+
+.breadcrumb {
+  font-style: "Proxima_Nova_Regular";
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.breadcrumb a {
+  color: #b70021;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-bottom: 2px solid #b70021;
+}
+
+.breadcrumb a:hover {
+  color: #1A2930;
+  border-bottom: 2px solid #1A2930;
+}
+
+.article-detail {
+  margin: 0 20% 0 7%;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 980px) {
+  .article-detail {
+    margin: 0 7%;
+  }
+}
+
+.article-detail .heading-set {
+  width: 70%;
+}
+
+@media screen and (max-width: 1150px) {
+  .article-detail .heading-set {
+    width: 100%;
+  }
+}
+
+.heading-set_heading {
+  font-family: "Proxima_Nova_Thin";
+  font-size: 41px;
+  line-height: 1;
+}
+
+.heading-set_details {
+  margin-top: 50px;
+  border-top: 1px solid #1a2930;
+}
+
+.heading-set_details .heading-set_detail {
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.heading-set_details .heading-set_detail .date-underline {
+  font-family: "ElektraTextPro", sans-serif;
+  font-size: 16px;
+  border-right: 1px solid #1a2930;
+  padding-top: 10px;
+  padding-right: 20px;
+  color: #b70021;
+}
+
+.text {
+  margin-top: 50px;
+  font-family: "Verdana", serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.image-set {
+  margin-top: 40px;
+}
+
+.image-set_img {
+  max-width: 700px;
+}
+
+@media screen and (max-width: 1100px) {
+  .image-set_img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .image-set_img {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .image-set_img {
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-set_img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .image-set_img {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .image-set_img {
+    max-width: 200px;
+  }
+}
+@font-face {
+  font-family: 'Verdana';
+  src: local("Verdana"), url("../../assets/fonts/Verdana.woff") format("woff"), url("../../assets/fonts/Verdana.ttf") format("ttf"), url("../../assets/fonts/Verdana.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Verdana_Bold';
+  src: url("../../assets/fonts/Verdana-Bold.woff") format("woff"), url("../../assets/fonts/Verdana-Bold.ttf") format("ttf"), url("../../assets/fonts/Verdana-Bold.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Verdana_Italic';
+  src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
+}
+
+@font-face {
   font-family: 'ElektraTextPro';
   src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
 }
@@ -1910,6 +2137,16 @@ ul {
 }
 
 @font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
+}
+
+@font-face {
   font-family: 'ElektraTextPro';
   src: url("../../assets/fonts/EtelkaText.otf") format("opentype");
 }
@@ -1936,6 +2173,16 @@ ul {
 @font-face {
   font-family: 'Verdana_Italic';
   src: url("../../assets/fonts/Verdana-Italic.woff") format("woff"), url("../../assets/fonts/Verdana-Italic.ttf") format("ttf"), url("../../assets/fonts/Verdana-Italic.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Thin';
+  src: url("../../assets/fonts/ProximaNovaT-Thin.woff") format("woff"), url("../../assets/fonts/ProximaNovaT-Thin.ttf") format("ttf"), url("../../assets/fonts/ProximaNovaT-Thin.eot") format("eot");
+}
+
+@font-face {
+  font-family: 'Proxima_Nova_Regular';
+  src: url("../../assets/fonts/ProximaNova-Regular.woff") format("woff"), url("../../assets/fonts/ProximaNova-Regular.ttf") format("ttf"), url("../../assets/fonts/ProximaNova-Regular.eot") format("eot");
 }
 
 @font-face {

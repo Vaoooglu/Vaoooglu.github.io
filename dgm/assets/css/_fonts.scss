@@ -21,6 +21,18 @@ src: url('/assets/fonts/Verdana-Italic.woff') format('woff'),
 		 url('/assets/fonts/Verdana-Italic.eot') format('eot');
 };
 @font-face {
+	font-family: 'Proxima_Nova_Thin';
+	src: url('/assets/fonts/ProximaNovaT-Thin.woff') format('woff'),
+			 url('/assets/fonts/ProximaNovaT-Thin.ttf') format('ttf'),
+			 url('/assets/fonts/ProximaNovaT-Thin.eot') format('eot');
+	};
+@font-face {
+	font-family: 'Proxima_Nova_Regular';
+	src: url('/assets/fonts/ProximaNova-Regular.woff') format('woff'),
+				url('/assets/fonts/ProximaNova-Regular.ttf') format('ttf'),
+				url('/assets/fonts/ProximaNova-Regular.eot') format('eot');
+	};
+@font-face {
   font-family: 'ElektraTextPro';
   src: url('/assets/fonts/EtelkaText.otf') format('opentype');
 };
