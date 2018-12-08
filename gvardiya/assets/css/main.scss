@@ -511,13 +511,21 @@ body {
 }
 .block-06 {
   height: 950px;
-  position: relative;
+	position: relative;
+	background: transparent rgba(0, 0, 0, 0.75);
   background: url("../img/block-06_motz1.jpg") left top no-repeat;
   background-size: cover;
   -webkit-transition: ease-out 1s;
   -moz-transition: ease-out 1s;
   -o-transition: ease-out 1s;
-  transition: ease-out 1s;
+	transition: ease-out 1s;
+	&:after{
+		content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+	}
 }
 .block-06 .container0 {
   width: 970px;
