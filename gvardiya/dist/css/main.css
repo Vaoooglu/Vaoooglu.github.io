@@ -877,7 +877,7 @@ body {
   display: block;
   font-size: 16px;
   line-height: 18px;
-  padding-top: 51px;
+  padding-top: 70px;
   text-align: center;
   text-decoration: none;
   font-family: 'exo_2.0extra_light';
@@ -892,27 +892,27 @@ body {
 }
 
 .block06a .center__nav li.item1 .helper {
-  background: url("../img/block1__icon1.png") 50% -35px no-repeat;
+  background: url("../img/block1__icon1.png") 50% -20px no-repeat;
 }
 
 .block06a .center__nav li.item2 .helper {
-  background: url("../img/block1__icon2.png") 50% -22px no-repeat;
+  background: url("../img/block1__icon2.png") 50% -10px no-repeat;
 }
 
 .block06a .center__nav li.item3 .helper {
-  background: url("../img/block1__icon3.png") 50% -22px no-repeat;
+  background: url("../img/block1__icon3.png") 50% -10px no-repeat;
 }
 
 .block06a .center__nav li.item4 .helper {
-  background: url("../img/block1__icon4.png") 50% -22px no-repeat;
+  background: url("../img/block1__icon4.png") 50% -10px no-repeat;
 }
 
 .block06a .center__nav li.item5 .helper {
-  background: url("../img/block1__icon5.png") 50% -22px no-repeat;
+  background: url("../img/block1__icon5.png") 50% -10px no-repeat;
 }
 
 .block06a .center__nav li.item6 .helper {
-  background: url("../img/block1__icon6.png") 50% -22px no-repeat;
+  background: url("../img/block1__icon6.png") 50% -10px no-repeat;
 }
 
 .for_item1,
