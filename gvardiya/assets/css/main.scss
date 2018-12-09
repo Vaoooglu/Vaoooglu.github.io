@@ -595,6 +595,64 @@ body {
     background-size: cover;
   }
 }
+.block06a_answer{
+	display: block;
+	position: absolute;
+	width: 560px;
+	height: 410px;
+	margin: 0 auto;
+	top: 50px;
+	left: 15px;
+	background: -moz-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(233,161,59,1) 50%, rgba(255,255,255,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(50%, rgba(233,161,59,1)), color-stop(100%, rgba(255,255,255,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(233,161,59,1) 50%, rgba(255,255,255,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(233,161,59,1) 50%, rgba(255,255,255,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(233,161,59,1) 50%, rgba(255,255,255,1) 100%); /* ie10+ */
+background: linear-gradient(315deg, rgba(255,255,255,1) 0%, rgba(233,161,59,1) 50%, rgba(255,255,255,1) 100%); /* w3c */
+border:1px solid white;
+border-radius: 5px;
+
+	/*кнопка закрыть начало*/
+	.close {
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding-top: 3px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background-color: rgba(61, 61, 61, 0.8);
+    text-align: center;
+    text-decoration: none;
+    font: 13px/20px 'Tahoma', Arial, sans-serif;
+    font-weight: bold;
+    transition: all ease .8s;
+}
+.close:before {
+    color: rgba(255, 255, 255, 0.9);
+    content: "X";
+    // text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+}
+.close:hover {
+    background-color: rgba(252, 20, 0, 0.8);
+    transform: rotate(360deg);
+}
+/*кнопка закрыть*/
+
+
+	p{
+		text-align: center;
+		padding: 60px 40px;
+		line-height: 30px;
+		font-family: 'exo_2.0extra_light';
+		font-size: 18px;
+		color:#000000;
+		font-weight: 700;
+
+	}
+}
 .block06a .center-block {
   top: 50%;
   width: 100%;
@@ -646,18 +704,37 @@ body {
   list-style: none;
 }
 .block06a .center__nav li {
+	position: relative;
   float: left;
   width: 275px;
   height: 130px;
   margin: 0 5px 10px 5px;;
 	border: 1px solid #4c4959;
 	background-color: #161928b8;
-  // background: url("../img/center__nav_bg.png") 0 0 no-repeat;
+	transition: all 1s ease-in-out;
+	// background: url("../img/center__nav_bg.png") 0 0 no-repeat;
+	.holder_item{
+		position:absolute;
+		transition: all 1s ease-in-out;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background:rgba(255,255,255, 0.7);
+		padding:5px;
+		display:none;
+		cursor: pointer;
+	}
+}
+.block06a .center__nav li:hover .holder_item{
+	display: block;
+	color: #0a0814;
+  background-color: #e9a13b;
 }
 .block06a .center__nav li:hover {
   border-color: #fff;
 }
-.block06a .center__nav li a {
+.block06a .center__nav li .helper {
   color: #fff;
   width: 100%;
   height: 100%;
@@ -673,58 +750,66 @@ body {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.block06a .center__nav li a span {
-  font-size: 12px;
+.block06a .center__nav li .holder_item{
+	text-align: center;
+	padding-top: 50px;
+	font-size: 20px;
+
 }
-.block06a .center__nav li.item1 a {
+// .block06a .center__nav li a span {
+//   font-size: 12px;
+// }
+.block06a .center__nav li.item1 .helper {
   background: url("../img/block1__icon1.png") 50% -35px no-repeat;
 }
-.block06a .center__nav li.item1 a:hover {
-  color: #0a0814;
-  background-color: #e9a13b;
-  // background-position: 50% -140px;
-}
-.block06a .center__nav li.item2 a {
+// .block06a .center__nav li.item1 a:hover {
+//   color: #0a0814;
+//   background-color: #e9a13b;
+//   // background-position: 50% -140px;
+// }
+.block06a .center__nav li.item2 .helper {
   background: url("../img/block1__icon2.png") 50% -22px no-repeat;
 }
-.block06a .center__nav li.item2 a:hover {
-  color: #0a0814;
-  background-color: #e9a13b;
-  // background-position: 50% -136px;
-}
-.block06a .center__nav li.item3 a {
+// .block06a .center__nav li.item2 a:hover {
+//   color: #0a0814;
+//   background-color: #e9a13b;
+//   // background-position: 50% -136px;
+// }
+.block06a .center__nav li.item3 .helper {
   background: url("../img/block1__icon3.png") 50% -22px no-repeat;
 }
-.block06a .center__nav li.item3 a:hover {
-  color: #0a0814;
-  background-color: #e9a13b;
-  // background-position: 50% -140px;
-}
-.block06a .center__nav li.item4 a {
+// .block06a .center__nav li.item3 a:hover {
+//   color: #0a0814;
+//   background-color: #e9a13b;
+//   // background-position: 50% -140px;
+// }
+.block06a .center__nav li.item4 .helper {
   background: url("../img/block1__icon4.png") 50% -22px no-repeat;
 }
-.block06a .center__nav li.item4 a:hover {
-  color: #0a0814;
-  background-color: #e9a13b;
-  // background-position: 50% -140px;
-}
-.block06a .center__nav li.item5 a {
+// .block06a .center__nav li.item4 a:hover {
+//   color: #0a0814;
+//   background-color: #e9a13b;
+//   // background-position: 50% -140px;
+// }
+.block06a .center__nav li.item5 .helper {
   background: url("../img/block1__icon5.png") 50% -22px no-repeat;
 }
-.block06a .center__nav li.item5 a:hover {
-  color: #0a0814;
-  background-color: #e9a13b;
-  // background-position: 50% -140px;
-}
-.block06a .center__nav li.item6 a {
+// .block06a .center__nav li.item5 a:hover {
+//   color: #0a0814;
+//   background-color: #e9a13b;
+//   // background-position: 50% -140px;
+// }
+.block06a .center__nav li.item6 .helper {
   background: url("../img/block1__icon6.png") 50% -22px no-repeat;
 }
-.block06a .center__nav li.item6 a:hover {
-  color: #0a0814;
-  background-color: #e9a13b;
-  // background-position: 50% -140px;
+// .block06a .center__nav li.item6 a:hover {
+//   color: #0a0814;
+//   background-color: #e9a13b;
+//   // background-position: 50% -140px;
+// }
+.for_item1,.for_item2,.for_item3,.for_item4,.for_item5,.for_item6{
+	display: none;
 }
-
 
 
 
@@ -1075,7 +1160,7 @@ z-index: 999;
   height: 390px;
   padding: 50px;
 	background: #d2d0ce;
-	position:absolute;
+	position: fixed;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
