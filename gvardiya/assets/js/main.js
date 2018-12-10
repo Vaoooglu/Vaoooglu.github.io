@@ -222,3 +222,25 @@ $(document).ready(function(){
 			{return false;}
 	}); // end submit()
 	}); // end script
+
+
+	(function($) {
+    $('.block06a-accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+    $('.block06a-accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('p');
+
+        $(this).closest('.block06a-accordion').find('p').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.block06a-accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);

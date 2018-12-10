@@ -735,28 +735,7 @@ body {
   }
 }
 
-.block06a_answer {
-  display: block;
-  position: absolute;
-  width: 560px;
-  height: 410px;
-  margin: 0 auto;
-  top: 50px;
-  left: 15px;
-  /* ff3.6+ */
-  /* safari4+,chrome */
-  /* safari5.1+,chrome10+ */
-  /* opera 11.10+ */
-  /* ie10+ */
-  background: linear-gradient(315deg, white 0%, #e9a13b 50%, white 100%);
-  /* w3c */
-  border: 1px solid white;
-  border-radius: 5px;
-  /*кнопка закрыть начало*/
-  /*кнопка закрыть*/
-}
-
-.block06a_answer .close {
+.block06a_answer-modal .block06a-close {
   top: -10px;
   right: -10px;
   width: 30px;
@@ -772,28 +751,113 @@ body {
   font-weight: bold;
   -webkit-transition: all ease .8s;
   transition: all ease .8s;
+  cursor: pointer;
 }
 
-.block06a_answer .close:before {
+.block06a_answer-modal .block06a-close:before {
   color: rgba(255, 255, 255, 0.9);
   content: "X";
   font-size: 12px;
 }
 
-.block06a_answer .close:hover {
+.block06a_answer-modal .block06a-close:hover {
   background-color: rgba(252, 20, 0, 0.8);
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
 
-.block06a_answer p {
+.block06a-modal-wrap:before {
+  content: "";
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: -200%;
+  left: -100%;
+  right: -100%;
+  bottom: -200%;
+  z-index: 101;
+}
+
+.block06a-modal-overlay {
+  bottom: -200%;
+  display: none;
+  left: -100%;
+  position: absolute;
+  right: -100%;
+  top: -200%;
+  z-index: 102;
+}
+
+.block06a_answer-modal-open:checked ~ .block06a-modal-wrap:before,
+.block06a_answer-modal-open:checked ~ .block06a-modal-wrap .block06a-modal-overlay {
+  display: block;
+}
+
+.block06a_answer-modal-open:checked ~ .block06a-modal-wrap .block06a-modal-dialog {
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  top: -13%;
+}
+
+.block06a-modal-dialog {
+  left: 300px;
+  top: -100%;
+  -webkit-transform: translate(-50%, -500%);
+  transform: translate(-50%, -500%);
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
+  z-index: 103;
+  display: block;
+  position: absolute;
+  width: 800px;
+  height: 607px;
+  margin: 0 auto;
+  /* ff3.6+ */
+  /* safari4+,chrome */
+  /* safari5.1+,chrome10+ */
+  /* opera 11.10+ */
+  /* ie10+ */
+  background: linear-gradient(315deg, white 0%, #e9a13b 50%, white 100%);
+  /* w3c */
+  border: 15px solid black;
+  border-radius: 15px;
+}
+
+.block06a-modal-body {
+  padding: 20px;
+  position: relative;
+  height: 100%;
+  border: 2px solid #ffffff;
+}
+
+.block06a-btn {
+  cursor: pointer;
+  position: relative;
+}
+
+.block06a-btn:hover,
+.block06a-btn:focus {
+  background: #f2f2f2;
+}
+
+.block06a_answer-modal p {
   text-align: center;
-  padding: 60px 40px;
-  line-height: 30px;
   font-family: 'exo_2.0extra_light';
-  font-size: 18px;
   color: #000000;
   font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.block06a_answer-modal p:first-child {
+  margin-top: 0;
+}
+
+.block06a_answer-modal span {
+  color: blue;
+  font-size: 14px;
 }
 
 .block06a .center-block {
@@ -922,6 +986,71 @@ body {
 .for_item5,
 .for_item6 {
   display: none;
+}
+
+.block06a-accordion {
+  max-width: 600px;
+  margin: 0 auto 0px;
+  list-style: none;
+}
+
+.block06a-accordion li {
+  border-bottom: 1px solid #082831;
+  position: relative;
+  padding-right: 15px;
+}
+
+.block06a-accordion li p {
+  display: none;
+  font-size: 14px;
+  padding: 0px 25px 0px;
+  color: #082831;
+}
+
+.block06a-accordion a {
+  width: 100%;
+  display: block;
+  color: #000000;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 16px;
+  margin-right: 20px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.block06a-accordion a:hover {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.block06a-accordion a:after {
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid #232a2c;
+  border-bottom: 1px solid #232a2c;
+  position: absolute;
+  right: 10px;
+  content: " ";
+  top: 7px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.block06a-accordion p {
+  font-size: 13px;
+  line-height: 2;
+  padding: 10px;
+}
+
+.block06a-accordion a.active:after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .block-07 {
