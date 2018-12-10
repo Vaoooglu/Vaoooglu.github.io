@@ -509,83 +509,83 @@ body {
   line-height: 18px;
   margin-left: 138px;
 }
-.block-06 {
-  height: 950px;
-	position: relative;
-	background: transparent rgba(0, 0, 0, 0.75);
-  background: url("../img/block-06_motz1.jpg") left top no-repeat;
-  background-size: cover;
-  -webkit-transition: ease-out 1s;
-  -moz-transition: ease-out 1s;
-  -o-transition: ease-out 1s;
-	transition: ease-out 1s;
-	&:after{
-		content:'';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.5);
-	}
-}
-.block-06 .container0 {
-  width: 970px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-}
-.block-06 .slider-inner {
-  z-index: 10;
-  right: 175px;
-  bottom: 0;
-  width: 770px;
-  height: 250px;
-  position: absolute;
-}
-.block-06 .slider-inner .slider-box {
-  width: 100%;
-  height: 138px;
-  margin-bottom: 2px;
-  padding-left: 330px;
-  position: relative;
-  border-bottom: 1px solid #352c2a;
-}
-.block-06 .slider-inner .slider-box .wrap {
-  top: 0;
-  right: 0;
-  left: 330px;
-  height: 200px;
-  overflow: hidden;
-  position: absolute;
-}
-.block-06 .slider-inner .slider-box .slider {
-  width: 100%;
-  height: 138px;
-}
-.block-06 .slider-inner .slider-box .slider li {
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  padding: 15px 20px 15px 50px;
-  background: url("../img/qoutes.png") 0 0 no-repeat;
-}
-.block-06 .slider-inner .slider-box .slider .slider-prev,
-.block-06 .slider-inner .slider-box .slider .slider-next {
-  margin-top: 30px;
-}
-.block-06 .slider-inner .nav-box {
-  width: 770px;
-  height: 110px;
-  padding: 20px 0 0 390px;
-  border-top: 1px solid #352c2a;
-}
-.block-06 .slide-01 {
-  background: url("../img/block-06_slide-01.jpg") top center no-repeat;
-  background-size: cover;
-}
-.block-06 .slide-02 {
-  background: url("../img/block-06_slide-01.jpg") top center no-repeat;
-  background-size: cover;
-}
+// .block-06 {
+//   height: 950px;
+// 	position: relative;
+// 	background: transparent rgba(0, 0, 0, 0.75);
+//   background: url("../img/block-06_motz1.jpg") left top no-repeat;
+//   background-size: cover;
+//   -webkit-transition: ease-out 1s;
+//   -moz-transition: ease-out 1s;
+//   -o-transition: ease-out 1s;
+// 	transition: ease-out 1s;
+// 	&:after{
+// 		content:'';
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     background: rgba(0,0,0,0.5);
+// 	}
+// }
+// .block-06 .container0 {
+//   width: 970px;
+//   margin-left: auto;
+//   margin-right: auto;
+//   position: relative;
+// }
+// .block-06 .slider-inner {
+//   z-index: 10;
+//   right: 175px;
+//   bottom: 0;
+//   width: 770px;
+//   height: 250px;
+//   position: absolute;
+// }
+// .block-06 .slider-inner .slider-box {
+//   width: 100%;
+//   height: 138px;
+//   margin-bottom: 2px;
+//   padding-left: 330px;
+//   position: relative;
+//   border-bottom: 1px solid #352c2a;
+// }
+// .block-06 .slider-inner .slider-box .wrap {
+//   top: 0;
+//   right: 0;
+//   left: 330px;
+//   height: 200px;
+//   overflow: hidden;
+//   position: absolute;
+// }
+// .block-06 .slider-inner .slider-box .slider {
+//   width: 100%;
+//   height: 138px;
+// }
+// .block-06 .slider-inner .slider-box .slider li {
+//   color: #fff;
+//   width: 100%;
+//   height: 100%;
+//   padding: 15px 20px 15px 50px;
+//   background: url("../img/qoutes.png") 0 0 no-repeat;
+// }
+// .block-06 .slider-inner .slider-box .slider .slider-prev,
+// .block-06 .slider-inner .slider-box .slider .slider-next {
+//   margin-top: 30px;
+// }
+// .block-06 .slider-inner .nav-box {
+//   width: 770px;
+//   height: 110px;
+//   padding: 20px 0 0 390px;
+//   border-top: 1px solid #352c2a;
+// }
+// .block-06 .slide-01 {
+//   background: url("../img/block-06_slide-01.jpg") top center no-repeat;
+//   background-size: cover;
+// }
+// .block-06 .slide-02 {
+//   background: url("../img/block-06_slide-01.jpg") top center no-repeat;
+//   background-size: cover;
+// }
 .block06a {
   height: 950px;
   background: url("../img/block01__bg.jpg") center center no-repeat;

@@ -11,7 +11,7 @@ $(document).ready(function() {
 								$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />');	//desktop
 								$('#page').fullpage({
 									menu: '#topnav',
-									anchors: ['homepage', 'ekonomiya', 'services', 'garant', 'advantages', 'reviews','answer-quetion', 'how-it-work', 'sales', 'contactPage'],
+									anchors: ['homepage', 'ekonomiya', 'services', 'garant', 'advantages','answer-quetion', 'how-it-work', 'sales', 'contactPage'],
 									css3: true,
 									verticalCentered: false,
 									navigation: true,
@@ -19,7 +19,7 @@ $(document).ready(function() {
 									navigationPosition: 'right',
 									showActiveTooltip: true,
 									responsive: 980,
-									navigationTooltips: ['Главная', 'Экономия', 'Услуги', 'Гарантии', 'Преимущества', 'Отзывы', 'Вопрос-ответ', 'Как мы работаем', 'Акция', 'Контакты'],
+									navigationTooltips: ['Главная', 'Экономия', 'Услуги', 'Гарантии', 'Преимущества', 'Вопрос-ответ', 'Как мы работаем', 'Акция', 'Контакты'],
 									onLeave: function(index , nextIndex , direction){
 												change_slide (nextIndex);
 									}
