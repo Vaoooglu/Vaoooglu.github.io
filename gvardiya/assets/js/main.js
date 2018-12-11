@@ -245,3 +245,28 @@ $(document).ready(function(){
         j.preventDefault();
     });
 })(jQuery);
+
+
+
+(function($) {
+$('.payforclass,#close_payfor').click(function() {
+	$('.popup-wrapper-payfor').toggleClass("shownpay")
+});
+$(document).mouseup(function (e) {
+	var popup1 = $('#payfor');
+		if (e.target!=popup1[0]&&popup1.has(e.target).length === 0){
+			$('.popup-wrapper-payfor').removeClass("shownpay");}
+	});
+})(jQuery);
+
+$(document).ready(function() {
+	$(".departments_print").click(function(){
+		var receipt = $(".print").html();
+	var barwin = window.open('', barwin, 'height=600,width=600');
+	barwin.document.write(receipt);
+	barwin.document.close(); // necessary for IE >= 10
+	barwin.focus(); // necessary for IE >= 10
+	barwin.print();
+		barwin.close();
+	});
+});
