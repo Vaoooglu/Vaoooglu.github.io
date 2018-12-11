@@ -734,7 +734,7 @@ body {
   /* ie10+ */
   background: linear-gradient(315deg, white 0%, #e9a13b 50%, white 100%);
   /* w3c */
-  border: 15px solid black;
+  border: 15px solid #1C1A1F;
   border-radius: 15px;
 }
 
