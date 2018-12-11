@@ -2,7 +2,7 @@ var isPhoneDevice = "ontouchstart" in document.documentElement;
 $(document).ready(function() {
 	$(window).bind('load', function() {
 			$("#preloader").fadeOut();
-			$("#preloader").delay(2000).fadeOut("slow");
+			$("#preloader").delay(1500).fadeOut("slow");
 	});
 					if(isPhoneDevice){
 						$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />');
@@ -26,54 +26,6 @@ $(document).ready(function() {
 						 		});
 							}
 });
-// $(".popup, .certificate-img").fancybox({
-// 	padding     : '0'
-// });
-// $('.stick').slick({
-// 	infinite: true,
-// 	slidesToShow : 1,
-// 	prevArrow: '<span class="slide-nav prev mini-prev"></span>',
-// 	nextArrow: '<span class="slide-nav next mini-next"></span>'
-// });
-// var slider = $('.slider');
-// slider.owlCarousel({
-// 	loop:true,
-// 	margin:10,
-// 	items: 1
-// });
-// var otz_nom = 0;
-// var otz = new Array();
-// otz = [
-// 			"dist/img/block-06_motz1.jpg",
-// 			"dist/img/block-06_motz2.jpg",
-// 			"dist/img/block-06_motz3.jpg"
-// 			];
-// var otz_max = otz.length;
-// $('.page-next').click(function() {
-// 	slider.trigger('next.owl.carousel');
-// 	otz_nom += 1;
-// 	if (otz_nom == otz_max) otz_nom = 0;
-// 	$(".block-06").css("background", 'url("'+otz[otz_nom]+'") left top no-repeat')
-// });
-// $('.page-prev').click(function() {
-// 	slider.trigger('prev.owl.carousel');
-// 	otz_nom -= 1;
-// 	if (otz_nom < 0) otz_nom = otz_max-1;
-// 	$(".block-06").css("background", 'url("'+otz[otz_nom]+'") left top no-repeat')
-// });
-// $(".advantages li").hover(
-// 	function () {
-// 			$(".advantages li").removeClass("active");
-// 			$(this).addClass("active");
-// 	}
-// );
-// $('#li--4').click(function() {
-// setTimeout("$('#li--4 span').replaceWith('файл прикреплен')", 2000);
-// });
-// $('#li--5').click(function() {
-// 	setTimeout("$('#li--5 span').replaceWith('файл прикреплен')", 2000);
-// });
-
 $('.btn-popup').click(function() {
 	if(!$('.popup-wrapper-consultation').hasClass("shown")){
 		$('.popup-wrapper-consultation').addClass("shown")
@@ -223,25 +175,3 @@ $(document).ready(function(){
 			{return false;}
 	}); // end submit()
 	}); // end script
-
-
-// 	(function($) {
-//     $('.block06a-accordion > li:eq(0) a').addClass('active').next().slideDown();
-
-//     $('.block06a-accordion a').click(function(j) {
-//         var dropDown = $(this).closest('li').find('p');
-
-//         $(this).closest('.block06a-accordion').find('p').not(dropDown).slideUp();
-
-//         if ($(this).hasClass('active')) {
-//             $(this).removeClass('active');
-//         } else {
-//             $(this).closest('.block06a-accordion').find('a.active').removeClass('active');
-//             $(this).addClass('active');
-//         }
-
-//         dropDown.stop(false, true).slideToggle();
-
-//         j.preventDefault();
-//     });
-// })(jQuery);
