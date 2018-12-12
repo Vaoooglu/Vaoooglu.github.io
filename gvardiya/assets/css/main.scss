@@ -1762,12 +1762,8 @@ ul {
 
 }
 .logo-text-inner{
-	display: flex;
-	flex-direction: column;
-	align-items: center ;
-	width: 560px;
-	margin-top: 22px;
-	margin-left: 80px;
+	float: left;
+	margin: 40px 0 0 80px;
 }
 .block-01 .first-inner{
 font-size:20px;
@@ -1784,15 +1780,26 @@ text-transform: uppercase;
   background-size: cover;
 }
 #block-01f h1{
-	top: 225px;
+	position: initial;
+	font-size: 14px;
+	line-height: 1.3;
+}
+#block-01f h2{
+	left: 0;
+  width: 100%;
+  position: absolute;
+	top: 182px;
 	display: flex;
-	justify-content: space-evenly;
+	a{
+		font-size: 14px;
+		margin-right: 20px;
+	}
 }
 #block-01h{
   background: url("../img/block01h_bg.jpg") top center no-repeat;
   background-size: cover;
 }
-#block-01h h1{
+#block-01h h2{
 	top: 220px;
 	display: flex;
 	justify-content: space-evenly;
@@ -1801,7 +1808,7 @@ text-transform: uppercase;
   background: url("../img/block01p_bg.jpg") top center no-repeat;
   background-size: cover;
 }
-#block-01p h1{
+#block-01p h2{
 	top: 220px;
 	display: flex;
 	justify-content: space-evenly;
@@ -1810,7 +1817,7 @@ text-transform: uppercase;
   background: url("../img/block01c_bg.jpg") top center no-repeat;
   background-size: cover;
 }
-#block-01с h1{
+#block-01с h2{
 	top: 220px;
 	display: flex;
 	justify-content: space-evenly;
@@ -1835,7 +1842,7 @@ width: 75px;
 height: 110px;
 }
 .inner-block-contact{
-margin-top: -60px;
+margin-top: 40px;
 float: right;
 
 }
@@ -1870,12 +1877,12 @@ p{
 }
 .footer-inner{
 	position: absolute;
-	bottom: 3%;
+	bottom: 0%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	width: 100%;
-	line-height: 4;
+	line-height: 3;
 	border-top: 1px solid;
 }
 
