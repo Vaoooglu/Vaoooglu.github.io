@@ -1637,13 +1637,14 @@ ul {
 #payfor {
   width: 85%;
 	max-width: 835px;
-    padding:10px 20px 10px 20px;
+    padding:40px 20px 10px 20px;
     background: white;
     position: fixed;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
+		z-index:100;
 
 }
 #payfor .form-header {
@@ -1726,16 +1727,15 @@ ul {
 }
 .qrcode{
 	text-align: center;
-	line-height: 190px;
+	line-height: 0;
+	font-size: 0;
 }
 
-.departments_print{
-	float: left;
-	padding-bottom: 10px;
-}
-.departments_load{
+
+.departments_print,.departments_load{
 	font-size: 17px;
 	padding-top: 5px;
+	padding-right: 20px;
 	float: left;
 
 }
@@ -1748,6 +1748,7 @@ ul {
 	cursor: pointer;
 	float: right;
 	transition: all 0.8s ease-in-out;
+	margin-top: -34px;
 	img{
 		width: 30px;
 		height: 30px;
@@ -1758,3 +1759,4 @@ ul {
 	transform: rotate(360deg);
 
 }
+
