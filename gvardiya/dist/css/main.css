@@ -98,11 +98,11 @@ body {
 .top-block .container .topnav {
   z-index: 999;
   float: left;
-  width: 600px;
+  width: 665px;
 }
 
 .top-block .container .topnav li {
-  margin: 0 12px;
+  margin: 0 6px;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -132,7 +132,9 @@ body {
   height: 150px;
   position: absolute;
   margin-left: -55px;
-  background: url("../img/logo_guardiya.png") 0 0 no-repeat;
+  background: url("../img/logo_guardiya.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .block-01 h1 {
@@ -1973,4 +1975,123 @@ h2 {
 #close_payfor:hover {
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
+}
+
+#block-01f {
+  background: url("../img/block01f_bg.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#block-01f h1 {
+  top: 220px;
+}
+
+#block-01h {
+  background: url("../img/block01h_bg.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#block-01h h1 {
+  top: 220px;
+}
+
+#block-01p {
+  background: url("../img/block01p_bg.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#block-01p h1 {
+  top: 220px;
+}
+
+#block-01с {
+  background: url("../img/block01c_bg.jpg") top center no-repeat;
+  background-size: cover;
+}
+
+#block-01с h1 {
+  top: 220px;
+}
+
+.block-01 .inner-content p:last-of-type {
+  padding-bottom: 40px;
+}
+
+.inner-top-block {
+  position: absolute;
+  top: 140px;
+}
+
+.inner-top-block .container {
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.block-01 .inner-logo {
+  top: 22px;
+  left: 0px;
+  margin-left: 0;
+  width: 75px;
+  height: 110px;
+}
+
+.inner-block-contact {
+  margin-top: 10px;
+  float: right;
+}
+
+.block-01 .inner-top-contact {
+  float: initial;
+  margin-bottom: 15px;
+}
+
+.top-block .container .inner-topnav {
+  margin-top: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.block-01 .inner-content {
+  position: absolute;
+  top: 42%;
+}
+
+.block-01 .inner-content a {
+  text-transform: uppercase;
+}
+
+.block-01 .inner-content p {
+  line-height: 1.5;
+}
+
+.footer-inner {
+  position: absolute;
+  bottom: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.topnav li {
+  margin: 0 5px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.topnav li a {
+  font-size: 12px;
+  color: #e9a13b;
+  font-family: 'exo_2.0semi_bold';
+}
+
+.copyright a {
+  color: #ffffff;
 }
