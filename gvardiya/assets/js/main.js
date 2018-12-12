@@ -1,4 +1,5 @@
 var isPhoneDevice = "ontouchstart" in document.documentElement;
+
 $(document).ready(function() {
 	$(window).bind('load', function() {
 			$("#preloader").fadeOut();
