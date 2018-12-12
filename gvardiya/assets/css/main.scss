@@ -1763,7 +1763,7 @@ ul {
 }
 .logo-text-inner{
 	float: left;
-	margin: 40px 0 0 78px;
+	margin: 40px 0 0 88px;
 }
 .block-01 .first-inner{
 font-size:20px;
@@ -1779,18 +1779,22 @@ text-transform: uppercase;
   background: url("../img/block01f_bg.jpg") top center no-repeat;
   background-size: cover;
 }
-#block-01f h1{
+#block-01f h2{
 	position: initial;
 	font-size: 19px;
 	line-height: 1.3;
 	text-align: start;
 }
-#block-01f h2{
+#block-01f .inner-block-title{
 	left: 0;
   width: 100%;
   position: absolute;
-	top: 210px;
-	display: flex;
+	top: 180px;
+	h1{
+		width: initial;
+		position: initial;
+		text-align: start;
+	}
 	a{
 		font-size: 14px;
 		margin-right: 20px;
@@ -1823,9 +1827,9 @@ text-transform: uppercase;
 	display: flex;
 	justify-content: space-evenly;
 }
-.block-01 .inner-content p:last-of-type{
-	padding-bottom: 40px;
-}
+// .block-01 .inner-content p:last-of-type{
+// 	padding-bottom: 40px;
+// }
 .inner-top-block{
 	position: absolute;
 	top: 117px;
@@ -1859,7 +1863,7 @@ float: right;
 
 .block-01 .inner-content{
 position: absolute;
-top: 30%;
+top: 286px;
 a{
 	text-transform: uppercase;
 }

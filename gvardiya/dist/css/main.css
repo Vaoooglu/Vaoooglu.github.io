@@ -1979,7 +1979,7 @@ h2 {
 
 .logo-text-inner {
   float: left;
-  margin: 40px 0 0 78px;
+  margin: 40px 0 0 88px;
 }
 
 .block-01 .first-inner {
@@ -1997,24 +1997,27 @@ h2 {
   background-size: cover;
 }
 
-#block-01f h1 {
+#block-01f h2 {
   position: initial;
   font-size: 19px;
   line-height: 1.3;
   text-align: start;
 }
 
-#block-01f h2 {
+#block-01f .inner-block-title {
   left: 0;
   width: 100%;
   position: absolute;
-  top: 210px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  top: 180px;
 }
 
-#block-01f h2 a {
+#block-01f .inner-block-title h1 {
+  width: initial;
+  position: initial;
+  text-align: start;
+}
+
+#block-01f .inner-block-title a {
   font-size: 14px;
   margin-right: 20px;
 }
@@ -2064,10 +2067,6 @@ h2 {
   justify-content: space-evenly;
 }
 
-.block-01 .inner-content p:last-of-type {
-  padding-bottom: 40px;
-}
-
 .inner-top-block {
   position: absolute;
   top: 117px;
@@ -2104,7 +2103,7 @@ h2 {
 
 .block-01 .inner-content {
   position: absolute;
-  top: 30%;
+  top: 286px;
 }
 
 .block-01 .inner-content a {
