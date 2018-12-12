@@ -1763,7 +1763,7 @@ ul {
 }
 .logo-text-inner{
 	float: left;
-	margin: 40px 0 0 80px;
+	margin: 40px 0 0 78px;
 }
 .block-01 .first-inner{
 font-size:20px;
@@ -1781,14 +1781,15 @@ text-transform: uppercase;
 }
 #block-01f h1{
 	position: initial;
-	font-size: 14px;
+	font-size: 19px;
 	line-height: 1.3;
+	text-align: start;
 }
 #block-01f h2{
 	left: 0;
   width: 100%;
   position: absolute;
-	top: 182px;
+	top: 210px;
 	display: flex;
 	a{
 		font-size: 14px;
@@ -1858,7 +1859,7 @@ float: right;
 
 .block-01 .inner-content{
 position: absolute;
-top: 37%;
+top: 30%;
 a{
 	text-transform: uppercase;
 }
