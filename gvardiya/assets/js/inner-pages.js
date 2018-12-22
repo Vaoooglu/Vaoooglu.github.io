@@ -1,31 +1,31 @@
 var isPhoneDevice = "ontouchstart" in document.documentElement;
-$(document).ready(function() {
+// $(document).ready(function() {
 	// $(window).bind('load', function() {
 	// 		$("#preloader").fadeOut();
 	// 		$("#preloader").delay(1500).fadeOut("slow");
 	// });
-					if(isPhoneDevice){
-						$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />');
-					}
-							else{
-								$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />');	//desktop
-								$('#page').fullpage({
-									menu: '#topnav',
-									anchors: ['flat_guard'],
-									css3: true,
-									verticalCentered: false,
-									navigation: false,
-									slidesNavigation: false,
-									navigationPosition: 'right',
-									showActiveTooltip: false,
-									responsive: 980,
-									navigationTooltips: ['Охрана квартиры'],
-									onLeave: function(index , nextIndex , direction){
-												change_slide (nextIndex);
-									}
-						 		});
-							}
-});
+// 					if(isPhoneDevice){
+// 						$('head').append('<link rel="stylesheet" type="text/css" href="dist/css/mobile.css" />');
+// 					}
+// 							else{
+// 								$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />');	//desktop
+// 								$('#page').fullpage({
+// 									menu: '#topnav',
+// 									anchors: ['flat_guard'],
+// 									css3: true,
+// 									verticalCentered: false,
+// 									navigation: false,
+// 									slidesNavigation: false,
+// 									navigationPosition: 'right',
+// 									showActiveTooltip: false,
+// 									responsive: 980,
+// 									navigationTooltips: ['Охрана квартиры'],
+// 									onLeave: function(index , nextIndex , direction){
+// 												change_slide (nextIndex);
+// 									}
+// 						 		});
+// 							}
+// });
 $(document).ready(function() {
 $('.btn-popup').click(function() {
 	if(!$('.popup-wrapper-consultation').hasClass("shown")){
@@ -51,7 +51,7 @@ $(document).ready(function() {
 			{
 						// Проверка поля "Имя"
 						case 'cf2_field_1':
-							 var rv_name = /^[a-zA-Zа-яА-Я]+$/;
+							 var rv_name = /^[0-9a-zA-Zа-яА-ЯёЁ.,\- ]+$/;
 							 if(val.length > 1 && val != '' && rv_name.test(val))
 							 {	$(this).addClass('not_error');
 									$(this).next('.error-box').text('Готово').css('color','#1A2930').animate({'paddingLeft':'10px'},400).animate({'paddingLeft':'5px'},400); }

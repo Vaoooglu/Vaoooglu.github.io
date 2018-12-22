@@ -12,7 +12,9 @@ $(document).ready(function() {
 								$('head').append('<link rel="stylesheet" type="text/css" href="dist/js/jquery.fullPage/jquery.fullPage.css" />');	//desktop
 								$('#page').fullpage({
 									menu: '#topnav',
-									anchors: ['homepage', 'ekonomiya', 'services', 'garant', 'answer-quetion', 'advantages', 'how-it-work', 'sales', 'contactPage'],
+									anchors: ['homepage', 'ekonomiya', 'services',
+									//  'garant',
+									  'answer-quetion', 'advantages', 'how-it-work', 'sales', 'contactPage'],
 									css3: true,
 									verticalCentered: false,
 									navigation: true,
@@ -20,7 +22,9 @@ $(document).ready(function() {
 									navigationPosition: 'right',
 									showActiveTooltip: true,
 									responsive: 980,
-									navigationTooltips: ['Главная', 'Экономия', 'Услуги', 'Гарантии', 'Вопрос-ответ','Преимущества',  'Как мы работаем', 'Акция', 'Контакты'],
+									navigationTooltips: ['Главная', 'Экономия', 'Услуги',
+									//  'Гарантии',
+									  'Вопрос-ответ','Преимущества',  'Как мы работаем', 'Акция', 'Контакты'],
 									onLeave: function(index , nextIndex , direction){
 												change_slide (nextIndex);
 									}
@@ -98,7 +102,8 @@ $(document).ready(function(){
 			{
 						// Проверка поля "Имя"
 						case 'cf_field_1':
-							 var rv_name = /^[a-zA-Zа-яА-Я]+$/;
+							 var rv_name = /^[0-9a-zA-Zа-яА-ЯёЁ.,\- ]+$/;
+							//  [0-9a-zA-Zа-яА-ЯёЁ.,\- ] [a-zA-Zа-яА-Я]
 							 if(val.length > 1 && val != '' && rv_name.test(val))
 							 {	$(this).addClass('not_error');
 									$(this).next('.error-box').text('Готово').css('color','#1A2930').animate({'paddingLeft':'10px'},400).animate({'paddingLeft':'5px'},400);}
@@ -123,7 +128,7 @@ $(document).ready(function(){
 				e.preventDefault();
 				if($('.not_error').length == 2)
 				{
-        let data = $('#cformsform').serialize();
+        var data = $('#cformsform').serialize();
         if (!data) return false;
 						$.ajax({
 							     type: "POST",
@@ -166,7 +171,7 @@ $(document).ready(function(){
 			{
 						// Проверка поля "Имя"
 						case 'cf2_field_1':
-							 var rv_name = /^[a-zA-Zа-яА-Я]+$/;
+							 var rv_name = /^[0-9a-zA-Zа-яА-ЯёЁ.,\- ]+$/;
 							 if(val.length > 1 && val != '' && rv_name.test(val))
 							 {	$(this).addClass('not_error');
 									$(this).next('.error-box').text('Готово').css('color','#1A2930').animate({'paddingLeft':'10px'},400).animate({'paddingLeft':'5px'},400); }
@@ -191,7 +196,7 @@ $(document).ready(function(){
 				e.preventDefault();
 				if($('.not_error').length == 2)
 				{
-					 let data1 = $('#cforms2form').serialize();
+					 var data1 = $('#cforms2form').serialize();
 					 if (!data1) return false;
 						$.ajax({
 									 url: 'mail2.php',

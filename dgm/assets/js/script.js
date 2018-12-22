@@ -258,3 +258,24 @@ $(document).ready(function() {
 
 // // сделаем фон этих элементов красным
 // boxesInWindow.css("animation", "scale_img 30s infinite linear");
+
+$(document).ready(function() {
+  $("li.categoria > a").click(function(e){
+    // $('html, body').animate({
+    //     scrollTop: $(this).offset().top
+    // }, 1000);
+    // e.preventDefault();
+    $(this).toggleClass("active").parent().toggleClass("active");
+    $(this).parent().children(".subcategorias-content").slideToggle();
+  });
+
+  // $("ul.categorias-content > li.categoria").click(function(event) {
+
+  //   var varActive = $(this).children("a.active").hasClass("seta-direita");
+  //   if ( varActive == true) {
+  //     $(this).children("a.seta-direita.active").removeClass("seta-direita").addClass("seta-baixo");
+  //   } else{
+  //     $(this).children("a.seta-baixo").removeClass("seta-baixo").addClass("seta-direita");
+  //   };
+  // });
+});

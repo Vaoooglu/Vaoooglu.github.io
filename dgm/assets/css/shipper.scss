@@ -1,31 +1,25 @@
 @import 'fonts';
 @import 'values';
+.shipper_content-wrapper{
+	display: flex;
+	@media screen and (max-width: 1024px){
+	display: block;
+	}
+}
 .shipper_content{
 	color:$unprimary;
 	padding-bottom: 40px;
-	display: grid;
-	grid-template-columns: 1fr 350px;
-	grid-column-gap: 40px;
-		// .part-left,.part-right{
-		// display: inline-block;
-		// vertical-align: top;
-		// float: left;
-		// }
-		@media screen and (max-width: 1024px){
-			grid-template-columns: initial;
-			grid-template-rows: 1fr auto auto;
-		}
 		p{
 			line-height:1.5;
 		}
 		.part-left{
-			padding-left: 50px;
-			padding-right: 50px;
+			margin: 0 50px;
+			@media screen and (max-width: 450px){
+				margin-right: 0;
+				margin-left: 0;
+			}
 		}
-		@media screen and (max-width: 450px){
-			margin-right: 12px;
-			margin-left: 12px;
-		}
+
 		.intro{
 			margin-bottom: 22px;
 			font-size:16px;
@@ -55,36 +49,23 @@
 			}
 		}
 		.contact-shipper{
-			grid-column-start:1;
-			grid-row-start:2;
-
 			box-shadow: 0px 0px 15px 0px rgba(182, 182, 182, 0.5);
 			text-align: center;
 			padding: 25px;
 			color:$unprimary;
 			font-size:16px;
-			margin-left: 50px;
-			@media screen and (max-width: 1240px){
-				grid-column-end:3;
-				margin:0 50px 0 50px;
-			}
 			@media screen and (max-width: 1024px){
-				grid-column-end:initial;
-				grid-column-start:initial;
-				grid-row-start:initial;
 				margin-top: 40px;
-				// grid-row-start:3;
 			}
 			@media screen and (max-width: 450px){
 				margin-right: 12px;
 				margin-left: 12px;
+				padding: 25px 5px;
 			}
 			.contact-tel-wrapper{
 				margin-bottom: 19px;
 				font-size:14px;
 				@media screen and (max-width: 500px){
-					display: inline-grid;
-
 				}
 				span{
 					line-height: 1.5;
@@ -130,9 +111,11 @@
 			padding: 38px 25px;
 			margin-right: 50px;
 			height: 330px;
+			width: 500px;
 			@media screen and (max-width: 1024px){
-				margin-left: 50px;
-			  height: auto;
+				margin:20px 50px;
+				height: auto;
+				width: auto;
 
 			}
 			@media screen and (max-width: 450px){

@@ -1995,6 +1995,14 @@ h2 {
 #block-01f {
   background: url("../img/block01f_bg.jpg") top center no-repeat;
   background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1240px) {
+  #block-01f .container {
+    width: 1100px;
+  }
 }
 
 #block-01f h2 {
@@ -2100,16 +2108,40 @@ h2 {
 #block-01h {
   background: url("../img/block01h_bg.jpg") top center no-repeat;
   background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1240px) {
+  #block-01h .container {
+    width: 1100px;
+  }
 }
 
 #block-01p {
   background: url("../img/block01p_bg.jpg") top center no-repeat;
   background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1240px) {
+  #block-01p .container {
+    width: 1100px;
+  }
 }
 
 #block-01с {
   background: url("../img/block01c_bg.jpg") top center no-repeat;
   background-size: cover;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+@media screen and (min-width: 1240px) {
+  #block-01с .container {
+    width: 1100px;
+  }
 }
 
 .inner-top-block {
@@ -2147,8 +2179,8 @@ h2 {
 }
 
 .block-01 .inner-content {
-  position: absolute;
-  top: 286px;
+  font-size: 1.2em;
+  margin-top: 290px;
 }
 
 .block-01 .inner-content a {
@@ -2177,8 +2209,7 @@ h2 {
 }
 
 .footer-inner {
-  position: absolute;
-  bottom: 0%;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2201,7 +2232,7 @@ h2 {
 }
 
 .topnav li a {
-  font-size: 12px;
+  font-size: 14px;
   color: #e9a13b;
   font-family: 'exo_2.0semi_bold';
 }

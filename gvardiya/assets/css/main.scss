@@ -46,7 +46,7 @@ body {
 .block-01 {
   height: 950px;
   background: url("../img/block-01_bg.jpg") top center no-repeat;
-  background-size: cover;
+	background-size: cover;
 }
 .top-block .container .topnav {
   z-index: 999;
@@ -1778,7 +1778,15 @@ text-transform: uppercase;
 
 #block-01f{
   background: url("../img/block01f_bg.jpg") top center no-repeat;
-  background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	overflow-y: scroll;
+	.container{
+	@media screen and (min-width: 1240px){
+		width: 1100px;
+	}
+
+}
 }
 #block-01f h2{
 	position: initial;
@@ -1866,15 +1874,36 @@ text-transform: uppercase;
 }
 #block-01h{
   background: url("../img/block01h_bg.jpg") top center no-repeat;
-  background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	overflow-y: scroll;
+		.container{
+			@media screen and (min-width: 1240px){
+			width: 1100px;
+		}
+	}
 }
 #block-01p{
   background: url("../img/block01p_bg.jpg") top center no-repeat;
-  background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	overflow-y: scroll;
+		.container{
+			@media screen and (min-width: 1240px){
+			width: 1100px;
+		}
+	}
 }
 #block-01с{
   background: url("../img/block01c_bg.jpg") top center no-repeat;
-  background-size: cover;
+	background-size: cover;
+	height: 100vh;
+	overflow-y: scroll;
+		.container{
+			@media screen and (min-width: 1240px){
+			width: 1100px;
+		}
+	}
 }
 // .block-01 .inner-content p:last-of-type{
 // 	padding-bottom: 40px;
@@ -1911,8 +1940,10 @@ float: right;
 }
 
 .block-01 .inner-content{
-position: absolute;
-top: 286px;
+// position: absolute;
+// top: 286px;
+font-size: 1.2em;
+margin-top: 290px;
 a{
 	text-transform: uppercase;
 }
@@ -1930,8 +1961,9 @@ p{
 	align-items: center;
 }
 .footer-inner{
-	position: absolute;
-	bottom: 0%;
+	// position: absolute;
+	// bottom: 0%;
+	margin-top: 50px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -1945,7 +1977,7 @@ p{
   display: inline-block;
 	text-transform: uppercase;
 	a{
-		font-size: 12px;
+		font-size: 14px;
     color: #e9a13b;
     font-family: 'exo_2.0semi_bold';
 	}
