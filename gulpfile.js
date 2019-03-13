@@ -28,31 +28,33 @@ var
 var paths = {
   name: "boiler",
   build: { //Куда складывать готовые файлы
-    server: 'build/',
-    html: 'build/',
-    js: 'build/js/',
+    server: './',
+    html: './',
+    js: './js/',
    // jsVendor: 'build/js/vendor/',
-    css: 'build/css/',
-    img: 'build/img/',
-    fonts: 'build/css/fonts/',
-    favicon: 'build/favicon/'
+    css: './css/',
+    img: './img/',
+    fonts: './css/fonts/',
+    favicon: './favicon/'
   },
   src: { //Пути откуда брать исходники
    // pug: ['src/pug/*.pug', '!src/pug/_*.pug'],
-    html:'src/*',
-    js: 'src/js/script.js',
+    html:'src/*.html',
+    js: 'src/js/*.js',
     //jsVendor: 'src/js/vendor.js',
     scss: ['src/css/sass/**/*.scss', 'src/sass/_*.scss'],
+    css: ['src/css/sass/**/*.css', 'src/sass/_*.css'],
     img: 'src/img/**/*.*',
     fonts: 'src/fonts/*',
     favicon: 'src/favicon/*'
   },
   watch: { //Пути файлов, за которыми хотим наблюдать
   //  pug: './src/pug/**/*.pug',
-    html: './src/*.html',
-    js: './src/js/script.js',
+    html: ['./src/*.html', './src/template/*.html'],
+    js: './src/js/*.js',
     //jsVendor: './src/js/vendor.js',
     scss: ['src/css/**/*.scss', 'src/css/sass/_*.scss'],
+    css: ['src/css/sass/**/*.css', 'src/sass/_*.css'],
     img: './src/img/**/*',
     favicon: './src/favicon/*',
     fonts: './src/fonts/*'
@@ -73,11 +75,19 @@ function fonts_fn() {
     .pipe(gulp.dest(paths.build.fonts))
     .pipe(browserSync.stream());
 }
-
+// Для минификации подключить!
+// function imgmin_fn() {
+//   return gulp.src(paths.src.img)
+//     .pipe(plumber())
+//     .pipe(imagemin({ optimizationLevel: 3, progressive: true }))
+//     .pipe(gulp.dest(paths.build.img))
+//     .pipe(browserSync.stream());
+// }
 function imgmin_fn() {
   return gulp.src(paths.src.img)
     .pipe(plumber())
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true }))
+    // .pipe(rigger())
+    // .pipe(concat('script.js'))
     .pipe(gulp.dest(paths.build.img))
     .pipe(browserSync.stream());
 }
@@ -85,12 +95,21 @@ function imgmin_fn() {
 function js_fn() {
   return gulp.src(paths.src.js)
     .pipe(plumber())
-    .pipe(rigger())
-    .pipe(concat('script.js'))
+    // .pipe(rigger())
+    // .pipe(concat('script.js'))
     .pipe(gulp.dest(paths.build.js))
     .pipe(browserSync.stream());
 }
 
+
+function css_fn() {
+  return gulp.src(paths.src.css)
+    .pipe(plumber())
+    // .pipe(rigger())
+    // .pipe(concat('script.js'))
+    .pipe(gulp.dest(paths.build.css))
+    .pipe(browserSync.stream());
+}
 // function jsV_fn() {
 //   return gulp.src(paths.src.jsVendor)
 //     .pipe(plumber())
@@ -115,7 +134,7 @@ function html_fn() {
     return gulp.src(paths.src.html)
       // .pipe(print(filepath => "src " + filepath))
       // .pipe(plumber())
-      // .pipe(rigger())
+      .pipe(rigger())
       .pipe(gulp.dest(paths.build.html))
       .pipe(browserSync.stream());
   }
@@ -179,6 +198,7 @@ function watch_fn() {
   gulp.watch(paths.watch.fonts, gulp.series(fonts_fn));
   gulp.watch(paths.watch.img, gulp.series(imgmin_fn));
   gulp.watch(paths.watch.js, gulp.series(js_fn));
+  gulp.watch(paths.watch.css, gulp.series(css_fn));
   //gulp.watch(paths.watch.jsVendor, gulp.series(jsV_fn));
   gulp.watch(paths.watch.html, gulp.series(html_fn));
   gulp.watch(paths.watch.scss, gulp.series(sass_fn));
@@ -191,6 +211,7 @@ var build = gulp.series(
     fonts_fn,
     imgmin_fn,
     js_fn,
+    css_fn,
     //jsV_fn,
     html_fn,
     sass_fn,
