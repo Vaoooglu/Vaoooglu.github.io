@@ -1106,22 +1106,87 @@ dd {
   font-weight: 300; }
 
 #know-how dd:nth-of-type(2) {
-  background: transparent url(../img/logo5.svg) no-repeat center center;
+  background: transparent url(../img/wordpress.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(3) {
-  background: transparent url(../img/logo5.svg) no-repeat center center;
+  background: transparent url(../img/responsive.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(4) {
-  background: transparent url(../img/logo5.svg) no-repeat center center;
+  background: transparent url(../img/html-5.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(5) {
-  background: transparent url(../img/logo5.svg) no-repeat center center;
+  background: transparent url(../img/css-3.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(6) {
+  background: transparent url(../img/5.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(7) {
+  background: transparent url(../img/sass.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(8) {
+  background: transparent url(../img/grid.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(9) {
+  background: transparent url(../img/5.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(10) {
+  background: transparent url(../img/nodejs.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(11) {
+  background: transparent url(../img/github.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(12) {
+  background: transparent url(../img/5.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(13) {
+  background: transparent url(../img/javascript.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(14) {
+  background: transparent url(../img/5.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(15) {
+  background: transparent url(../img/5.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(16) {
+  background: transparent url(../img/domain.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(17) {
+  background: transparent url(../img/svg.svg) no-repeat center center;
+  -webkit-background-size: 3vw 3vw;
+          background-size: 3vw; }
+
+#know-how dd:nth-of-type(18) {
+  background: transparent url(../img/photoshop.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
