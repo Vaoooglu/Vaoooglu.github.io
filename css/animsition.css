@@ -36,7 +36,7 @@
 }
 
 .animsition-loading:after {
-  content: 'WBXPRT';
+  content: 'WEBDEV';
   position: fixed;
   top: 0;
   right: 0;
@@ -53,8 +53,8 @@
   color: #000;
   display: block;
   overflow: hidden;
-  font-weight: 100;
-  font-family:'Code-Light';
+  font-weight: 200;
+  font-family:'Montserrat', sans-serif;
   font-size: 30px;
  }
 
@@ -83,7 +83,7 @@ position: fixed;
   top: 0%;
   left: 0%;
   z-index: 100;
-  background: transparent url("../img/loader.png") no-repeat center center;
+  background: transparent url("../img/logo2.svg") no-repeat center center;
   background-size: 150px 170px;
    width: 100vw;
   height: 100vh;
