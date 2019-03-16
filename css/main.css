@@ -1126,7 +1126,7 @@ dd {
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(6) {
-  background: transparent url(../img/5.svg) no-repeat center center;
+  background: transparent url(../img/bootstrap.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
@@ -1141,7 +1141,7 @@ dd {
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(9) {
-  background: transparent url(../img/5.svg) no-repeat center center;
+  background: transparent url(../img/gulp.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
@@ -1156,7 +1156,7 @@ dd {
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(12) {
-  background: transparent url(../img/5.svg) no-repeat center center;
+  background: transparent url(../img/jquery.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
@@ -1171,7 +1171,7 @@ dd {
           background-size: 3vw; }
 
 #know-how dd:nth-of-type(15) {
-  background: transparent url(../img/5.svg) no-repeat center center;
+  background: transparent url(../img/react.svg) no-repeat center center;
   -webkit-background-size: 3vw 3vw;
           background-size: 3vw; }
 
