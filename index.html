@@ -44,8 +44,6 @@
             <div class="preloader">
                 <p>Wisedev</p>
                 <div class="svg_img">
-                  <xml version="1.0" encoding="iso-8859-1">
-                  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                   <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 504.123 504.123" style="enable-background:new 0 0 504.123 504.123;" xml:space="preserve">
                   <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-14.2178" y1="627.332" x2="-14.2178" y2="527.085" gradientTransform="matrix(7.8769 0 0 -7.8769 364.0537 4969.6694)">
@@ -208,16 +206,21 @@
 <canvas class="figures"></canvas>
               <div class="cover"></div>
               <ol class="social">
-                <li><a href="https://www.linkedin.com/in/glushakov-vladimir-7b8430135/" target="_blank" class=""><img src="img/linkedin.png" /></a></li>
-                <li><a href="https://www.facebook.com/vaoooglu" target="_blank" class=""><img src="img/facebook.png" /></a></li>
-                <li><a href="https://vk.com/vaoooglu" target="_blank" class=""><img src="img/vk.png" /></a></li>
+                <li><a href="https://www.linkedin.com/in/glushakov-vladimir-7b8430135/" target="_blank" class="">
+                  <img src="img/linkedin.png" alt="social linkedin"/></a>
+                </li>
+                <li><a href="https://www.facebook.com/vaoooglu" target="_blank" class="">
+                  <img src="img/facebook.png"  alt="social facebook" /></a>
+                </li>
+                <li><a href="https://vk.com/vaoooglu" target="_blank" class="">
+                  <img src="img/vk.png"  alt="social vk" /></a>
+                </li>
               </ol>
             </div>
             <article class="nano">
               <div class="nano-content">
               
-              <p>
-                <strong>WiseDEV</strong> - программирование Ваших идей.</p>
+              <p><strong>WiseDEV</strong> - программирование Ваших идей.</p>
 
                 <p>Меня зовут <em>Владимир Глушаков</em> и я люблю <em>Web-разработку</em>. Обожаю сотрудничать с <em>вдохновленными</em> людьми и перенимать <em>опыт</em>, люблю изучать новые технологии и создавать <em>отличные</em> работы.</p>
 
@@ -240,16 +243,9 @@
 
                 <h4>ДОРАБОТКА ФУНКЦИОНАЛА</h4>
                 <p>Доработка уже готовых <em>web-сайтов</em>, согласно <em>Ваших</em> потребностей и желаний.</p>
-
-                <!-- <h4>WIREFRAMING</h4>
-                <p>Designing structure, layout, navigation, functions, content and graphic elements of a website during the <em>planning phase</em></p> -->
-
-              </p>
               </div>
             </article>
-
           </div> <!-- .cd-content -->
-
         </section> <!-- .cd-section -->
       </main> <!-- .cd-main -->
     </div>
@@ -291,7 +287,6 @@
               </ul>
             </nav>
           </div>
-
   </div>
   <script src="js/jquery-1.11.3.min.js"></script>
     <!-- <script src="js/animsition.min.js"></script> -->
@@ -305,61 +300,30 @@
     <script src="js/jquery.nanoscroller.min.js"></script>
   <script type="text/javascript">
     $(function() {
-  
       var $window = $(window),
       $document = $(document)
-  
-      // $(".animsition").animsition({
-      //   inClass: 'fade-in',
-      //   outClass: 'fade-out',
-      //   inDuration: 1500,
-      //   outDuration: 800,
-      //   linkElement: '.animsition-link',
-      //   // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
-      //   loading: true,
-      //   loadingParentElement: 'body', //animsition wrapper element
-      //   loadingClass: 'animsition-loading',
-      //   loadingInner: '', // e.g '<img src="loading.svg" />'
-      //   timeout: false,
-      //   timeoutCountdown: 5000,
-      //   onLoadEvent: true,
-      //   browser: [ 'animation-duration', '-webkit-animation-duration'],
-      //   // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-      //   // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-      //   overlay : false,
-      //   overlayClass : 'animsition-overlay-slide',
-      //   overlayParentElement : 'body',
-      //   transition: function(url){ window.location.href = url; }
-      // });
-  
       $('body').addClass('ready');
-  
       $("#trigger-overlay").click(function() {
         $('body').addClass('noscroll');
       });
-  
       $(".overlay-close").click(function() {
         $('body').removeClass('noscroll');
       });
-  
       setTimeout(function(){ $('.header canvas').velocity('fadeIn',{duration: 500, easing: "ease-in-out"}) }, 1200);
       setTimeout(function(){ $('.header h1').velocity('transition.slideUpIn',{duration: 500, easing: "ease-in-out"}) }, 1600);
       setTimeout(function(){ $('.cd-scroll').velocity('fadeIn',{duration: 500, easing: "ease-in-out"}) }, 2000);
       setTimeout(function(){ $('#trigger-overlay').velocity('fadeIn',{duration: 500, easing: "ease-in-out"}) }, 2400);
-  
      //scroll to content if user clicks the .cd-scroll icon
      var mainContent = $('.cd-main')
      mainContent.on('click', '.cd-scroll', function(event){
       event.preventDefault();
       $(window).velocity('scroll',{duration: 1000, easing: "ease-in-out", offset:100});
     });
-  
      $("nav li:not(.active) a").hover(function(){
           $("nav .active img").stop().fadeTo(300, 0).css("top", 50);
       },function(){
           $("nav .active img").stop().fadeTo(300, 0.075).css("top", 0);
       });
-  
   var shrinkHeader = 50;
   $window.scroll(function() {
     var scroll = getCurrentScroll();
@@ -387,7 +351,6 @@
     $.Velocity.RunSequence(mySequence);
     $(".nano").nanoScroller({ alwaysVisible: true,  sliderMaxHeight: 35  });
     setTimeout(function(){ $(".nano-content").css("overflow", "scroll") }, 1500);
-  
   }
   else {
     $('body').removeClass('shrink');
@@ -407,13 +370,11 @@
     ];
     $.Velocity.RunSequence(mySequenceOne);
     $(".nano-content").css("overflow", "hidden");
-  
   }
   });
   function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;
   }
-  
   $('.cd-scroll').on('click', function () {
     var $element1 = $('.figures').eq(0), $element2 = $('.animsition h2').eq(0), $element3 = $('.cd-scroll').eq(0), $element4 = $('aside h3'), $element5 = $('.social'), $element6 = ('.nano-content p');
     var mySequence = [
@@ -437,10 +398,8 @@
       $(".nano").nanoScroller({ alwaysVisible: true,  sliderMaxHeight: 35  });
       setTimeout(function(){ $(".nano-content").css("overflow", "scroll") }, 1500);
     });
-  
   if (window.matchMedia("(min-width: 1025px)").matches) {
   particlesJS('particles-js',
-  
   {
     "particles": {
       "number": {
@@ -557,11 +516,9 @@
       "background_size": "cover"
     }
   }
-  
   );
   } else {
     particlesJS('particles-js',
-  
   {
     "particles": {
       "number": {
@@ -677,9 +634,7 @@
       "background_repeat": "no-repeat",
       "background_size": "cover"
     }
-  }
-  
-  );
+  });
   }
   });
   </script>
